@@ -1,0 +1,97 @@
+.module-quotes {
+	margin-bottom: 30px;
+}
+
+.quote-layout1 .quote-wrap {
+	display: inline-block;
+	width: auto;
+	position: relative;
+}
+
+.quote-layout1 .quote-content {
+	position: absolute;
+	width: 75%;
+	bottom: 0;
+	right: 0;
+	text-align: right;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 2%;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+.quote-layout1 .quote-text:before {
+	color: #fff;
+	content: open-quote;
+	font-size: 6em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+	position: absolute;
+}
+
+.quote-layout1 .quote-content span,
+.quote-layout1 .quote-author span {
+	background: #fff;
+	padding: 0;
+}
+
+.quote-layout1 .quote-author {
+	font-weight: bold;
+}
+.quote-layout1 .quote-author a {
+	text-decoration: none;
+}
+
+.quote-layout2 .quote-wrap {
+	background: rgb(87, 212, 252);
+	padding: 20px 20px 0 0;
+	position: relative;
+}
+
+.quote-layout2 .quote-text {
+	position: absolute;
+	top: 45px;
+	right: 10px;
+	width: 45%;
+	color: #fff;
+}
+.quote-layout2 .quote-content {
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+.quote-layout2 .quote-image {
+	width: 50%;
+	height: auto;
+	border: none !important;
+	background: none !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	position: relative;
+	z-index: 10;
+}
+
+.quote-layout2 .quote-author {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	z-index: 5;
+	text-align: right;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 1.3em;
+}
+
+.quote-layout2 .quote-text:before {
+	color: #fff;
+	content: open-quote;
+	font-size: 6em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+	position: absolute;
+	font-family: Georgia;
+}

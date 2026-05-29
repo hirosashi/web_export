@@ -1,0 +1,598 @@
+@charset "UTF-8";
+/*
+Theme Name:アート工房未来
+Template: basic
+*/
+#body .module.none {
+  display: none;
+}
+
+.page-template-uscescart table {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  font-size: .875rem;
+}
+.page-template-uscescart table thead, .page-template-uscescart table tfoot {
+  background: #f5f5f5;
+}
+.page-template-uscescart table thead tr:last-child, .page-template-uscescart table tfoot tr:last-child {
+  border-bottom: 1px solid #ddd;
+}
+.page-template-uscescart .font-awesome {
+  font-family: 'FontAwesome';
+}
+
+.cf {
+  zoom: 1;
+}
+.cf:before, .cf:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.cf:after {
+  clear: both;
+}
+
+.hide .module-title {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+/* body設定 */
+.site {
+  font-family: "ヒラギノ角ゴ ProN W3″", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  color: #161616;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  text-align: left;
+  line-height: 1.7;
+  background-color: #fff;
+}
+.site a {
+  color: #161616;
+  text-decoration: underline;
+}
+.site a:visited {
+  color: #161616;
+}
+.site a:hover {
+  color: #e70012;
+  text-decoration: none;
+}
+.site a:active {
+  color: #e70012;
+}
+
+/*ページトップへ戻る*/
+.rtt {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 9999;
+}
+.rtt a {
+  text-decoration: none;
+  max-width: 120px;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+}
+.rtt a:hover {
+  text-decoration: none;
+}
+.rtt a span {
+  font-size: 30px;
+  font-size: 1.875rem;
+  display: block;
+  line-height: 1;
+}
+
+.anchor_load {
+  padding: 2px 0;
+}
+.anchor_load ul {
+  margin: 0;
+  border-top: solid 1px #e70012;
+  padding: 15px 10px;
+  text-align: center;
+}
+.anchor_load ul li {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  /* Fix for IE7 */
+  *display: inline;
+  /* Fix for IE7 */
+  list-style: none;
+  border-left: solid 1px #000;
+  padding: 0 10px;
+}
+.anchor_load ul li:first-child {
+  border: none;
+}
+
+/*************************************
+     header
+*************************************/
+/*************************************
+     footer
+*************************************/
+#footerwrap #footer-nav {
+  padding: 10px 0;
+  margin: 0;
+  text-align: center;
+}
+#footerwrap #footer-nav li {
+  margin: 0;
+  border-left: solid 1px #000;
+}
+#footerwrap #footer-nav li:first-child {
+  border-left: none;
+}
+#footerwrap #footer-nav li a {
+  padding: 0 10px;
+}
+#footerwrap #footer-nav li .sub-menu {
+  display: none;
+}
+#footerwrap .footer-text {
+  text-align: center;
+}
+#footerwrap .footer-widgets {
+  padding: 0;
+}
+#footerwrap .copy {
+  text-align: center;
+  color: #161616;
+  padding: 10px 0;
+}
+
+.backtop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
+/*************************************
+nav
+*************************************/
+/*************************************
+     クライアント専用部分
+*************************************/
+#body .module .wpcf7 table {
+  border-collapse: collapse;
+}
+#body .module .wpcf7 table tbody tr th, #body .module .wpcf7 table tbody tr td {
+  border: solid 1px #007fac;
+  padding: 5px 7px;
+}
+#body .module .wpcf7 table tbody tr th {
+  color: #e70012;
+  width: 25%;
+}
+#body .module .wpcf7 table tbody tr th span {
+  color: #ff0000;
+  font-size: 10px;
+  font-size: 0.625rem;
+}
+#body .module .wpcf7 table tbody tr th span.nomal {
+  font-weight: normal;
+  color: inherit;
+  display: block;
+}
+#body .module .wpcf7 input[type=submit] {
+  max-width: 250px;
+  width: 100%;
+  margin: 15px auto;
+  background: #007fac;
+}
+#body .module .wpcf7 input[type=submit]:hover {
+  background: #e70012;
+  color: #fff;
+}
+#body .module.news .module-title {
+  margin-bottom: 0;
+}
+#body .module.nt .module-title {
+  background: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+}
+#body .module.nt .module-title span {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: inherit;
+}
+#body .module.non-t .module-title {
+  background: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+}
+#body .module.non-t .module-title span {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: inherit;
+}
+#body .module.non-t .module-title {
+  visibility: hidden;
+  font-size: 0px;
+  font-size: 0rem;
+  margin: 0;
+}
+#body .module.non-t .image-content {
+  margin: 0;
+}
+#body .module.round {
+  border-radius: 10px;
+}
+#body .bgp-rb {
+  background-position: right bottom;
+}
+#body .bgp-rt {
+  background-position: right top;
+}
+#body .bgp-lb {
+  background-position: left bottom;
+}
+#body .bgp-ct {
+  background-position: center top;
+}
+#body .bgp-cb {
+  background-position: center bottom;
+}
+#body .bgp-cb {
+  background-position: center center;
+}
+
+/*モジュールフォーマット*/
+.module {
+  margin-bottom: 30px;
+}
+.module p:last-child {
+  margin: 0;
+}
+.module .module-title {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #e70012;
+  padding: 0 0 10px 0;
+  text-transform: capitalize;
+}
+.module .module-title span {
+  display: block;
+}
+.module .pagenav a {
+  background: #e70012;
+  color: #fff;
+}
+.module .pagenav .number.current {
+  color: #e70012;
+}
+
+body.single #body .post-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+body.single #body .post-content .post-title {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-size: 1rem;
+}
+body.single #body .post-content .post-title span {
+  display: block;
+}
+body.single #body .rtb {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+  background: #007fac;
+  border-radius: 10px;
+}
+body.single #body .rtb a {
+  display: block;
+  color: #fff;
+}
+
+/*mediaquery*/
+@media screen and (max-width: 768px) {
+  #body #layout {
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #body #layout #content {
+    padding: 0 2%;
+    padding-bottom: 35px;
+  }
+  #body #layout #content .module.hide .module-title {
+    background-image: none;
+    text-indent: 0;
+    min-height: inherit;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    text-align: center;
+  }
+  #body #layout #content .module.hide .module-title span {
+    background: none;
+  }
+  #body #layout #content .module .table-wrap {
+    overflow: auto;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  #body #layout #content .module .table-wrap table {
+    width: 685px;
+  }
+  #body #layout #content .module .x-slid {
+    font-size: 14px;
+    font-size: 0.875rem;
+    color: #007fac;
+  }
+  #body #layout #content .module .no_slide thead th, #body #layout #content .module .no_slide thead td, #body #layout #content .module .no_slide tbody th, #body #layout #content .module .no_slide tbody td {
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #body #layout #sidebar .widget {
+    width: inherit;
+    margin: 0 auto;
+  }
+}
+.wpcf7-form dt {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.wpcf7-form dt span {
+  margin-left: 5px;
+  color: #980203;
+}
+.wpcf7-form dd {
+  margin-bottom: 10px;
+}
+.wpcf7-form input {
+  background-color: #fff;
+}
+
+/*ナビゲーション用CSS*/
+@media screen and (max-width: 939px) {
+  #responsive-btn {
+    background: #007fac;
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    text-align: right;
+    padding: 10px;
+    color: #fff;
+    z-index: 9999;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #responsive-btn:before {
+    content: "\25b6";
+  }
+
+  #responsive-nav-wrapper {
+    background: #007fac;
+  }
+  #responsive-nav-wrapper #main-nav li {
+    border-top: solid 1px #fff;
+  }
+  #responsive-nav-wrapper #main-nav li a {
+    color: #fff !important;
+  }
+  #responsive-nav-wrapper #main-nav li.current_page_item a, #responsive-nav-wrapper #main-nav li.current-menu-parent a, #responsive-nav-wrapper #main-nav li.current-menu-item a {
+    background-color: inherit;
+  }
+  #responsive-nav-wrapper #main-nav li ul {
+    border-radius: 0;
+    border: none;
+    background: inherit;
+  }
+  #responsive-nav-wrapper #main-nav li ul li {
+    border-left: solid 1px #fff;
+  }
+  #responsive-nav-wrapper #main-nav li ul li a:hover {
+    background-color: inherit;
+  }
+  #responsive-nav-wrapper #main-nav li .sub-arrow {
+    display: none;
+  }
+}
+/*モジュール初期設定*/
+/************************************************************************************
+IMAGE MODULE
+*************************************************************************************/
+.module-article {
+  max-width: 100%;
+}
+.module-article .image-title {
+  margin: 0 0 .5em;
+  font-size: 1.3em;
+}
+.module-article .image-title a {
+  text-decoration: none;
+}
+.module-article .article-content {
+  overflow: hidden;
+  word-break: break-all;
+}
+.module-article .image-wrap {
+  vertical-align: top;
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+}
+.module-article .image-wrap img {
+  vertical-align: top;
+}
+.module-article.image-top .image-content {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+.module-article.image-left .image-wrap {
+  float: left;
+  margin: 0 1.5em 1em 0;
+}
+.module-article.image-left .image-content {
+  overflow: hidden;
+  min-width: 100px;
+}
+.module-article.image-right .image-wrap {
+  float: right;
+  margin: 0 0 1em 1.5em;
+}
+.module-article.image-overlay {
+  font-size: .85em;
+}
+.module-article.image-overlay .image-wrap {
+  position: relative;
+  margin: 0;
+}
+.module-article.image-overlay .image-wrap img {
+  width: 100%;
+}
+.module-article.image-overlay .image-wrap img + .image-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.module-article.image-overlay .image-wrap a + .image-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.module-article.image-overlay .image-content {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2% 4%;
+  width: 100%;
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ccc;
+  line-height: 1.4em;
+}
+.module-article.image-overlay p {
+  margin: 0 0 5px;
+}
+.module-article.image-overlay .image-title {
+  font-size: 1.1em;
+  color: #fff;
+  margin: 0 0 .4em;
+}
+.module-article.image-overlay a {
+  color: #fff;
+  text-decoration: none;
+}
+.module-article.image-overlay a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.module-article.image-center .image-wrap {
+  display: block;
+  text-align: center;
+}
+.module-article.image-center .module-title {
+  text-align: center;
+}
+.module-article.image-center .image-content {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+.module-article.image-h-right .image-content {
+  overflow: hidden;
+}
+.module-article.image-h-right .image-wrap {
+  float: right;
+  margin: 0 0 1em 1.5em;
+}
+.module-article.image-h-left .image-content {
+  overflow: hidden;
+}
+.module-article.image-h-left .image-wrap {
+  float: left;
+  margin: 0 1.5em 1em 0;
+}
+.module-article.rounded .image-wrap {
+  border-radius: 5px;
+}
+.module-article.rounded .image-wrap img {
+  border-radius: 5px;
+}
+.module-article.rounded.image-overlay .image-content {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.module-article.bordered .image-wrap img {
+  border: solid 1px #999;
+  background: #fff;
+  padding: 2px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.module-article.drop-shadow .image-wrap {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.module-article.circle .image-wrap {
+  border-radius: 50em;
+}
+.module-article.circle .image-wrap img {
+  border-radius: 50em;
+}
+.module-article.circle.image-overlay .image-content {
+  border-bottom-left-radius: 50em;
+  border-bottom-right-radius: 50em;
+  overflow: hidden;
+  text-align: center;
+}
+.module-article .auto_fullwidth .image-wrap {
+  width: 100%;
+}
+.module-article .auto_fullwidth .image-wrap img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .module.module-article .image-wrap {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .module.module-image .image-wrap {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+	.biz_calendar p:last-child {
+    display: none;
+	}
