@@ -1,0 +1,158 @@
+/************************************************************************************
+HEADER
+*************************************************************************************/
+/* header */
+#header{
+	height:auto!important
+}
+
+/* nav bar */
+#nav-bar{
+	display:none
+}
+
+/* site logo */
+#site-logo a{
+	font-size:30px
+}
+
+/* social widget */
+.social-widget{
+	position:static;
+	padding:10px 0;
+	float:none
+}
+
+/* searchform */
+#header #searchform #s{
+	float:right;
+	width:50px
+}
+#header #searchform input#s:focus{
+	width:150px
+}
+
+/************************************************************************************
+MOBILE NAV BUTTON
+*************************************************************************************/
+.mobile-button{
+	background-color:#eee;
+	color:#000;
+	position:relative;
+	width:30px;
+	height:14px;
+	padding:9px 4px;
+	float:right;
+	cursor:pointer;
+	border-radius:5px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center
+}
+.menu-icon-inner{
+	box-sizing:border-box;
+	display:inline-block;
+	position:relative;
+	width:1.25em;
+	height:1.25em;
+	overflow:hidden;
+	vertical-align:middle
+}
+.menu-icon-inner:before,
+.menu-icon-inner:after{
+	content:'';
+	display:block;
+	position:absolute;
+	left:0;
+	width:100%;
+	transition:all .7s ease;
+	transition-property:transform
+}
+.menu-icon-inner,
+.menu-icon-inner:before,
+.menu-icon-inner:after{
+	border-bottom:2px solid
+}
+.menu-icon-inner:before{
+	top:0
+}
+.menu-icon-inner:after{
+	top:50%
+}
+.mobile-button.active:before{
+	color:#555
+}
+
+/************************************************************************************
+MAIN NAV (MOBILE)
+*************************************************************************************/
+#main-nav-wrap{
+	position:relative
+}
+/* main nav */
+#main-nav{
+	clear:both;
+	position:absolute;
+	top:38px;
+	right:0;
+	left:auto;
+	bottom:auto;
+	width:200px;
+	max-height:70vh;
+	padding:5px 0;
+	margin:0;
+	overflow:auto;
+	-webkit-overflow-scrolling:touch;
+	z-index:1000;
+	background-color:#fff;
+	display:none; /* visibility will be toggled with jquery */
+	box-shadow:0 0 0 1px rgba(0,0,0,.2), 0 2px 12px rgba(0,0,0,.15);
+	border-radius:5px
+}
+#main-nav li{
+	clear:both;
+	float:none;
+	margin:0;
+	padding:0;
+	border:0;
+	box-shadow:none;
+	background:0
+}
+#main-nav a,
+#main-nav ul a{
+	text-transform:inherit;
+	background:0;
+	width:auto;
+	display:block;
+	padding:6px 14px;
+	margin:0 0 1px;
+	color:#666;
+	border:0;
+	text-shadow:none;
+	box-shadow:none;
+	border-radius:0
+}
+#main-nav a:hover,
+#main-nav ul a:hover{
+	background-color:rgba(0,0,0,.07);
+	color:#000
+}
+#main-nav ul a{
+	padding-left:28px
+}
+
+/* dropdown */
+#main-nav ul{
+	position:static;
+	display:block;
+	margin:0;
+	padding:0;
+	background:0;
+	border:0;
+	border-radius:0;
+	box-shadow:none
+}
+#main-nav .child-arrow{
+	display:none!important
+}
