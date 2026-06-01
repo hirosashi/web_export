@@ -1,0 +1,4 @@
+@charset "UTF-8";
+
+#header h1 a{background:url(images/lapista-logo.png) no-repeat; text-indent:-9999px; display:block; height:50px; width:200px; }
+.no-bullet ul li{list-style:none;}

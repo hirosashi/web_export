@@ -1,0 +1,496 @@
+/*******************************************************************
+基礎CSS
+********************************************************************/
+#footer .footer-text a:hover{
+text-decoration:none;
+}
+/*******************************************************************
+追加CSS
+*********************************************************************/
+#footer li,#header li{list-style:none;}
+/*パディング*/
+.pt10{padding:10px 0 0 0; margin:0;}
+
+#header{height:auto;}
+
+ul{margin:0 0 1em 0;}
+
+li{ list-style-position: inside;}
+/*マージン*/
+#body .mb0.module{margin-bottom:0;}
+#body .mb5.module{margin-bottom:5px;}
+#body .mb10.module{margin-bottom:10px;}
+#body .mb15.module{margin-bottom:15px;}
+#body .mb20.module{margin-bottom:20px;}
+#body .mb30.module{margin-bottom:30px;}
+#body .mb40.module{margin-bottom:40px;}
+#body .mb50.module{margin-bottom:50px;}
+#body .mb60.module{margin-bottom:60px;}
+#body .mt0.module{margin-top:0;}
+#body .mt10.module{margin-top:10px;}
+#body .mt20.module{margin-top:20px;}
+#body .mt30.module{margin-top:30px;}
+#body .mt40.module{margin-top:40px;}
+#body .mt50.module{margin-top:50px;}
+#body .mt60.module{margin-top:60px;}
+#body .ml0.module{margin-left:0;}
+#body .mr0.module{margin-right:0;}
+#body .tm0 .module-title{margin-bottom:0;}
+.module-image.image-top .image-content{
+  margin-top: 0;
+}
+p.mb0{margin: 0;}
+
+a img:hover{opacity:0.70;}
+
+.pagewidth{max-width:100%;}
+
+.nontitle .module-title{display:none;}
+
+.sub-arrow{
+  display: none;
+}
+
+.txtblock p{overflow:auto;}
+
+#body .module input[type=text],
+#body .module input[type=search],
+#body .module input[type=email],
+#body .module input[type=tel], 
+#body .module input[type=url],
+#body .module input[type=date],
+#body .module input[type=number],
+#body .module textarea{
+color:#000;
+width: 100%;
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+max-width:100%;
+background: #fff;
+border: solid 1px #ddd;
+padding: 6px 10px;
+border-radius: 5px;
+-webkit-appearance: none;
+}
+
+#body input[type=reset],
+#body input[type=submit],
+#body button{
+  background-color: #e5e4e1;
+  color:#000;
+}
+#body input[type=reset]:hover,
+#body input[type=submit]:hover,
+#body button:hover{
+  background-color: #000;
+  color: #e5e4e1;
+}
+
+/*ナビ*/
+#main-nav{
+width:100%; 
+box-sizing:border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+}
+
+#main-nav a{margin:0;}
+#main-nav ul a{width:auto;}
+
+#pagewrap nav ul li ul.sub-menu{width:100%; padding:0; border-radius: 0; border:none;}
+#pagewrap nav ul li ul.sub-menu li{width:100%; background: none;}
+#pagewrap nav ul li ul.sub-menu li a{width:100%;text-indent: 0; text-align: center;}
+
+.loops-wrapper.list-thumb-image .post-image{margin: 0 16px 10px 0;}
+
+.flexslider {
+margin: 0;
+background: inherit;
+border: none;
+position: relative;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+-o-border-radius: 0px;
+border-radius: 0px;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+-o-box-shadow: none;
+box-shadow: none;
+zoom: 1;
+}
+.flex-control-nav{
+width: 100%;
+position: static;
+bottom: 0;
+}
+
+
+/* #######################################################################
+共通
+####################################################################### */
+#site-logo,#site-description,#main-nav{
+position:static;
+}
+img{
+	max-width:100%;
+	vertical-align: text-bottom;
+}
+
+#main-nav li:hover > ul {
+	z-index: 999;
+}
+
+.wpcf7-validates-as-date{
+word-wrap: normal;
+}
+
+.wp-caption-text{
+font-style: normal;
+}
+
+.module-title,
+.author-posts-by,
+.category-section-title,
+.commentlist .comment-time,
+.commentlist .comment-reply-link{
+  text-transform: none;
+}
+
+
+
+
+/*新モジュール用CSS*/
+/*見出し、左画像、右本文*/
+.module-image.image-h-left .image-wrap{
+margin:0 1em 1em 0;
+float:left;
+}
+.module-image.image-h-left .image-caption{
+display:inline;
+}
+/*見出し、右画像、左本文*/
+.module-image.image-h-right .image-wrap{
+margin:0 0 1em 1em;
+float:right;
+}
+.module-image.image-h-right .image-caption{
+display:inline;
+}
+/*見出し・本文（上）　画像（下）*/
+.module-image.image-bottom .image-wrap{
+  width:100%;
+  text-align: center;
+}
+.module-image.image-bottom .image-content{
+  margin-bottom: 10px;
+}
+
+/*画像（上）　見出し・本文（下）*/
+.module-image.image-top .image-wrap{
+  width:100%;
+  text-align: center;
+}
+
+/*見出し（上）、画像（中）、本文（下）*/
+.module-image.image-middle .image-wrap{
+  text-align: center;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/*画像のみ*/
+.module-image.image-only .image-wrap{
+  width:100%;
+  text-align: center;
+}
+
+#body .module-image .image-content{
+  margin: 0 0 15px 0;
+}
+
+/*画像モジュール用新CSS*/
+/* .module-image .module-title{
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1; Fix for IE7
+  *display: inline; Fix for IE7
+}
+.module-image .image-title{
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1; Fix for IE7
+  *display: inline; Fix for IE7
+} */
+
+/* .module.gallery .gallery-item .gallery-icon img{
+  width: 100%;
+} */
+
+/*ハイライト*/
+.module-highlight .highlight-post .post-image{margin-right: 0;}
+.module-highlight.fullwidth .post-image{margin-right: 0;}
+.module-highlight .highlight-post .post-image img{border-radius: 0;}
+
+/*追加CSS*/
+@media screen and (max-width: 768px) {
+.hidetitle .module-title{text-indent:0;white-space: inherit;}
+
+/*スマホ用ナビCSS*/
+#responsive-nav-wrapper #main-nav li.current_page_item > a:before {
+    content: "\25b6";
+    margin-right: 5px;
+}
+#responsive-nav-wrapper #main-nav li.current-menu-parent > a:before {
+    content: " ";
+    margin-right: 0;
+}
+
+#body .gallery-columns-1 .gallery-item, 
+#body .gallery-columns-2 .gallery-item, 
+#body .gallery-columns-3 .gallery-item, 
+#body .gallery-columns-4 .gallery-item, 
+#body .gallery-columns-5 .gallery-item, 
+#body .gallery-columns-6 .gallery-item, 
+#body .gallery-columns-7 .gallery-item, 
+#body .gallery-columns-8 .gallery-item,
+#body .gallery-columns-9 .gallery-item{
+  width: 49.2%;
+}
+#body .gallery-columns-1 .gallery-item.odd, 
+#body .gallery-columns-2 .gallery-item.odd, 
+#body .gallery-columns-3 .gallery-item.odd, 
+#body .gallery-columns-4 .gallery-item.odd, 
+#body .gallery-columns-5 .gallery-item.odd, 
+#body .gallery-columns-6 .gallery-item.odd, 
+#body .gallery-columns-7 .gallery-item.odd, 
+#body .gallery-columns-8 .gallery-item.odd,
+#body .gallery-columns-9 .gallery-item.odd{
+  margin: 0 1.5% 1.5% 0;
+}
+#body .gallery-columns-1 .gallery-item.even, 
+#body .gallery-columns-2 .gallery-item.even, 
+#body .gallery-columns-3 .gallery-item.even, 
+#body .gallery-columns-4 .gallery-item.even, 
+#body .gallery-columns-5 .gallery-item.even, 
+#body .gallery-columns-6 .gallery-item.even, 
+#body .gallery-columns-7 .gallery-item.even, 
+#body .gallery-columns-8 .gallery-item.even,
+#body .gallery-columns-9 .gallery-item.even{
+  margin: 0 0 1.5% 0;
+}
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+/*新モジュールスマホキャンセル*/
+.module-image.image-h-right .image-caption,.module-image.image-h-left .image-caption{
+float:none;
+width:100%;
+}
+
+.module-image.image-h-right .image-wrap,
+.module-image.image-h-left .image-wrap,
+.module-image.image-right .image-wrap,
+.module-image.image-left .image-wrap{
+float:none;
+margin:1em 0 1em 0;
+width:100%;
+}
+
+/*スマホ管理用*/
+/* themify設定 */
+.themify_builder.lightbox {
+  width: 96% !important;
+  padding: 20px 2% !important;
+  margin-left: -50% !important;
+}
+
+.themify_builder_content .themify_builder_row .toggle_row {
+  right: 0px !important;
+  border-right: none !important;
+  border-left: 1px solid #E4E4E4 !important;
+  border-radius: 5px 0px 0px 5px !important;
+  z-index: 9999 !important;
+  background-color: #fff !important;
+}
+.themify_builder_content .move_row, .themify_builder_content .row_menu {
+  top: 33px !important;
+  right: 0px !important;
+  border-right: none !important;
+  z-index: 9999 !important;
+  left: auto !important;
+}
+.themify_builder_content .row_menu {
+  top: 64px !important;
+}
+.themify_builder_content .row_menu .themify_builder_dropdown {
+  right: 0px !important;
+  left: auto !important;
+}
+
+.themify_builder_admin input.xsmall, .themify_builder_admin textarea.xsmall {
+  width: 20% !important;
+}
+
+.themify_builder_input {
+  width: 100% !important;
+}
+
+.wp_themeSkin table.mceToolbar, .wp_themeSkin tr.mceFirst .mceToolbar tr td, .wp_themeSkin tr.mceLast .mceToolbar tr td {
+  display: block !important;
+  float: left !important;
+}
+
+.themify_builder_field .mceIframeContainer {
+  width: 100% !important;
+}
+.themify_builder_field .wp_themeSkin .mceStatusbar {
+  padding: 0 0 0 2% !important;
+  width: 98% !important;
+}
+
+.themify-builder-plupload-upload-uic input {
+  width: 280px !important;
+}
+
+.builder_save_front_panel .themify-builder-front-save {
+  margin-bottom: 25px !important;
+}
+
+.themify_builder_input {
+  width: 100% !important;
+}
+
+.themify_builder_input.pushed {
+  margin-left: 0px !important;
+}
+
+#wp-admin-bar-themify_builder a {
+  width: 16px !important;
+  height: 26px !important;
+  padding: 10px 5px !important;
+  overflow: hidden;
+}
+
+.themify_builder_module .module_name {
+  display: none !important;
+}
+
+.frontend .themify_builder_module {
+width: auto !important;
+}
+
+#wpadminbar .ab-top-menu>.menupop>.ab-sub-wrapper .ab-item{
+width:100%!important;
+}
+
+.themify_builder.builder-lightbox{
+max-width:700px;
+width:100%;
+margin:0;
+left: inherit;
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+.mean-container .mean-nav ul#main-nav li{
+float:none;
+width:auto;
+}
+
+.mean-nav #main-nav ul.children{
+position:static;
+}
+
+#main-nav a, #main-nav ul a{
+float:none;
+display:block;
+}
+
+#main-nav a{
+padding:15px;
+}
+
+/****** 管理画面 ******/
+#wp-admin-bar-themify_builder {
+  display: block !important;
+}
+
+.frontend .slide_builder_module_wrapper {
+  padding-right: 0 !important;
+}
+
+.builder_save_front_panel {
+  position: relative !important;
+  float: right !important;
+  top: 0 !important;
+}
+
+.themify-builder-front-close {
+  display: none !important;
+}
+
+.auto-fold #wpcontent, .auto-fold #wpfooter {
+  margin-left: 0px !important;
+}
+
+#wpcontent, .auto-fold #wpcontent {
+  padding-left: 0px !important;
+}
+
+.auto-fold #adminmenuback, .auto-fold #adminmenuwrap, .auto-fold #adminmenu, .auto-fold #adminmenu li.menu-top {
+  width: 45px !important;
+}
+
+.wp-responsive-open #wpbody {
+  right: -45px !important;
+}
+
+.welcome-panel, .postbox, table.widefat, .wp-editor-container, .stuffbox, p.popular-tags, .widgets-holder-wrap, .popular-tags, .feature-filter, .imgedit-group {
+  background: #222 !important;
+}
+
+.widefat tbody {
+  background: #fff !important;
+}
+
+html.wp-toolbar {
+  padding-top: 0 !important;
+}
+
+input, select, textarea, .wp-editor-area {
+  font-size: 16px !important;
+}
+
+.wrap {
+  margin: 4px 0px 0 0 !important;
+}
+
+#poststuff #edit-slug-box strong {
+  display: none;
+}
+#poststuff #edit-slug-box #sample-permalink {
+  display: none;
+}
+#poststuff #edit-slug-box #change-permalinks {
+  display: none;
+}
+
+a.wp-switch-editor {
+  padding: 10px 5px !important;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+#wp-content-editor-tools {
+  padding-right: 0px !important;
+}
+
+}
