@@ -1,0 +1,11 @@
+#site-logo{
+	font-size:36px;
+	letter-spacing:-.02em;
+	font-weight:bold;
+	line-height:1.4em;
+	margin:0
+}
+#site-logo a,
+#site-logo a:hover{
+	text-decoration:none
+}
