@@ -1,0 +1,309 @@
+@charset "UTF-8";
+/*
+Theme Name: ManaSys
+Template: basic
+Author: Trendmake
+Copyright: (c) 2020 Trendmake
+Version: 20200403
+*/
+
+/*******************************
+Common Setting
+*******************************/
+body {
+	font-family: 'YuGothic', 'Yu Gothic', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
+	font-size: 16px;
+	line-height: 2;
+}
+#content {
+	padding: 0;
+}
+/* Those Classes change row_inner width,
+   when you set the Themify Builder > Row Options > Row Width to Default and Boxed. */
+.module_row > .row_inner,
+.module-layout-part .module_row.fullwidth_row_container > .row_inner {
+	width: 100%;
+}
+
+/*******************************
+Header Fix
+*******************************/
+#header.header {
+	height: auto;
+	border-bottom: none;
+}
+/* Mobile Menu Button */
+#menu-button {
+	display: none;
+}
+/* Header Site Branding */
+#site-logo,
+#site-description {
+	position: static;
+}
+#site-logo {
+	line-height: 1;
+}
+#site-logo a,
+#site-logo a img {
+	display: block;
+}
+/* Search Form in Header */
+#headerwrap #header #searchform {
+	position: static;
+}
+#headerwrap #header #searchform #s {
+	float: none;
+}
+
+/*******************************
+Footer Fix
+*******************************/
+#footer {
+	border-top: none;
+	clear: none;
+	padding: 0;
+}
+#pc-backtop {
+	display: block;
+	position: fixed;
+	z-index: 500;
+	bottom: 50px;
+	right: 50px;
+	opacity: 0;
+	transition: opacity .3s;
+}
+#pc-backtop.is-visible{
+	opacity: 1;
+}
+#pc-backtop.is-visible a{
+	margin-top:10px;
+}
+#pc-backtop.is-visible a:hover {
+	opacity: .7;
+}
+#pc-backtop a,
+#pc-backtop a img {
+	display: block;
+}
+.sp-footer-icons-container {
+	display: none;
+}
+
+/************************************************
+***************** Media Query *******************
+*************************************************/
+@media screen and (max-width: 768px) {
+	/*******************************
+	Body, Header and Footer Fix
+	*******************************/
+	#pagewrap {
+		position: relative;
+		padding-bottom: 64px;
+	}
+
+	/*******************************
+	Header Fix
+	*******************************/
+	#header.header {
+		padding-top: 0;
+	}
+	/* Mobile Header Site Brand */
+	.header-brand-container #site-description {
+		margin: 0;
+		padding-bottom: 8px;
+	}
+	/* Mobile Menu Button */
+	#menu-button {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		z-index: 900;
+		top: 0;
+		right: 0;
+		width: 48px;
+		height: 48px;
+		background-color: #fafafa;
+	}
+	#menu-button .ham-lines {
+		position: relative;
+		margin: 0 auto;
+		width: 32px;
+		height: 32px;
+	}
+	#menu-button .ham-lines span,
+	#menu-button .ham-lines::before,
+	#menu-button .ham-lines::after {
+		position: absolute;
+		display: block;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		width: 28px;
+		height: 2px;
+		background-color: #111;
+		border-radius: 1px;
+	}
+	#menu-button .ham-lines span {
+		bottom: 15px;
+		transition: all .25s .25s;
+		opacity: 1;
+	}
+	#menu-button .ham-lines::before,
+	#menu-button .ham-lines::after {
+		content: "";
+	}
+	#menu-button .ham-lines::before{
+		bottom: 24px;
+		animation: menu-bar01 .75s forwards;
+	}
+	#menu-button .ham-lines::after {
+		bottom: 6px;
+		animation: menu-bar03 .75s forwards;
+	}
+	#menu-button .ham-text {
+		font-size: 12px;
+		line-height: 1;
+	}
+	#menu-button.is-active .ham-lines span {
+		opacity: 0;
+	}
+	#menu-button.is-active .ham-lines::before {
+		animation: active-menu-bar01 .5s forwards;
+	}
+	#menu-button.is-active .ham-lines::after {
+		animation: active-menu-bar03 .5s forwards;
+	}
+	@keyframes menu-bar01 {
+		0% {
+			transform: translateY(9px) rotate(45deg);
+		}
+		50% {
+			transform: translateY(9px) rotate(0);
+		}
+		100% {
+			transform: translateY(0) rotate(0);
+		}
+	}
+	@keyframes menu-bar03 {
+		0% {
+			transform: translateY(-9px) rotate(-45deg);
+		}
+		50% {
+			transform: translateY(-9px) rotate(0);
+		}
+		100% {
+			transform: translateY(0) rotate(0);
+		}
+	}
+	@keyframes active-menu-bar01 {
+		0% {
+			transform: translateY(0) rotate(0);
+		}
+		50% {
+			transform: translateY(9px) rotate(0);
+		}
+		100% {
+			transform: translateY(9px) rotate(45deg);
+		}
+	}
+	@keyframes active-menu-bar03 {
+		0% {
+			transform: translateY(0) rotate(0);
+		}
+		50% {
+			transform: translateY(-9px) rotate(0);
+		}
+		100% {
+			transform: translateY(-9px) rotate(-45deg);
+		}
+	}
+
+	
+	/* Search Form in Header Nav */
+	#headerwrap #header #searchform {
+		position: static;
+		width: auto;
+		margin: 0 auto;
+		padding: 8px 16px;
+		text-align: center;
+	}
+	#headerwrap #header #searchform #s {
+		float: none;
+		width: 80%;
+		height: auto;
+		font-size: 16px;
+		line-height: 1.6;
+	}
+	/* Header Main Menu */
+	#main-menu-container .main-menu,
+	#main-menu-container .sub-menu {
+		margin: 0;
+		list-style: none;
+	}
+	#main-menu-container .menu-item {
+		margin: 0;
+		padding: 8px 0 0 16px;
+	}
+	#main-menu-container .main-menu {
+		position: static;
+		width: 100%;
+		max-width: 94%;
+		margin: 0 auto 16px;
+		padding: 0;
+		border: none;
+		border-radius: 0;
+		background-color: transparent;
+		box-shadow: none;
+	}
+	#main-menu-container .main-menu>li {
+		margin: 0 16px;
+		padding: 8px;
+		border-bottom: dotted 1px #ccc;
+	}
+	#main-menu-container .main-menu>li:last-of-type {
+		border-bottom: none;
+	}
+	#main-menu-container .main-menu li a {
+		font-size: 16px;
+		line-height: 2;
+		color: #111;
+	}
+	/*******************************
+	Footer Fix
+	*******************************/
+	#pc-backtop {
+		display: none;
+	}
+	.sp-footer-icons-container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		position: fixed;
+		z-index: 600;
+		right: 0;
+		left: 0;
+		bottom: 8px;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.sp-footer-icons-container a {
+		display: block;
+		height: 48px;
+		width: 48px;
+		line-height: 48px;
+		text-align: center;
+		font-size: 16px;
+		border-radius: 50%;
+		background-color: #fafafa;
+		text-decoration: none;
+	}
+	.sp-footer-icons-container a i {
+		display: block;
+		line-height: 48px;
+		color: #111;
+	}
+}
+
