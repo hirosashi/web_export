@@ -105,9 +105,3 @@ add_action('wp_enqueue_scripts', function() {
     wp_enqueue_script('jquery');
 });
 
-// Set archive posts per page to 1 (for testing pagination)
-add_action('pre_get_posts', function($query) {
-    if (!is_admin() && $query->is_main_query() && $query->is_category()) {
-        $query->set('posts_per_page', 1);
-    }
-});
