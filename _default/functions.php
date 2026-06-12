@@ -57,31 +57,20 @@ remove_action('wp_head', 'wp_shortlink_wp_head');
 // Remove generator meta tag
 remove_action('wp_head', 'wp_generator');
 
-// Set proper page title
+// Set page title: ページタイトル｜サイトのタイトル
 add_filter('pre_get_document_title', function($title) {
-    $site_name = '株式会社 後藤三郎商店';
+    $site_name = get_bloginfo('name');
     if (is_front_page()) {
-        return '京都のれん | 風呂敷 | ' . $site_name;
+        return $site_name;
     }
-    if (is_page()) {
-        $page_titles = [
-            'hojin' => '法人のお客様について',
-            'tapestry-furoshiki' => '風呂敷について',
-            'tsutsumikata' => '風呂敷の包み方',
-            'contact' => 'お問い合わせ',
-            'info' => '会社概要',
-        ];
-        global $post;
-        if ($post && isset($page_titles[$post->post_name])) {
-            return $page_titles[$post->post_name] . ' | 京都市 | ' . $site_name;
-        }
-        return get_the_title() . ' | ' . $site_name;
-    }
-    if (is_single()) {
-        return get_the_title() . ' | ' . $site_name;
+    if (is_page() || is_single()) {
+        return get_the_title() . '｜' . $site_name;
     }
     if (is_category()) {
-        return single_cat_title('', false) . ' | ' . $site_name;
+        return single_cat_title('', false) . '｜' . $site_name;
+    }
+    if (is_tag()) {
+        return single_tag_title('', false) . '｜' . $site_name;
     }
     return $title;
 });
