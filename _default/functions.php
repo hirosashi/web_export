@@ -5,6 +5,7 @@
  */
 
 add_theme_support('post-thumbnails');
+add_theme_support('title-tag');
 
 // Remove WP Block Library CSS
 add_action('wp_enqueue_scripts', function() {
@@ -58,19 +59,29 @@ remove_action('wp_head', 'wp_generator');
 
 // Set proper page title
 add_filter('pre_get_document_title', function($title) {
+    $site_name = '株式会社 後藤三郎商店';
+    if (is_front_page()) {
+        return '京都のれん | 風呂敷 | ' . $site_name;
+    }
     if (is_page()) {
         $page_titles = [
-            'top' => '京都のれん | 風呂敷 | 株式会社 後藤三郎商店',
-            'hojin' => '法人のお客様について | 京都市 | 株式会社 後藤三郎商店',
-            'tapestry-furoshiki' => '風呂敷について | 京都市 | 株式会社 後藤三郎商店',
-            'tsutsumikata' => '風呂敷の包み方 | 京都市 | 株式会社 後藤三郎商店',
-            'contact' => 'お問い合わせ | 京都市 | 株式会社 後藤三郎商店',
-            'info' => '会社概要 | 京都市 | 株式会社 後藤三郎商店',
+            'hojin' => '法人のお客様について',
+            'tapestry-furoshiki' => '風呂敷について',
+            'tsutsumikata' => '風呂敷の包み方',
+            'contact' => 'お問い合わせ',
+            'info' => '会社概要',
         ];
         global $post;
         if ($post && isset($page_titles[$post->post_name])) {
-            return $page_titles[$post->post_name];
+            return $page_titles[$post->post_name] . ' | 京都市 | ' . $site_name;
         }
+        return get_the_title() . ' | ' . $site_name;
+    }
+    if (is_single()) {
+        return get_the_title() . ' | ' . $site_name;
+    }
+    if (is_category()) {
+        return single_cat_title('', false) . ' | ' . $site_name;
     }
     return $title;
 });
