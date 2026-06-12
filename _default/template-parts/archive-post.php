@@ -35,7 +35,9 @@ if ($cat) : ?>
 <?php endwhile; ?>
     </div><!-- /.loops-wrapper -->
 
-<?php wp_pagenavi(); ?>
+<div class="pagenav tf_clear tf_box tf_textc tf_clearfix">
+    <?php wp_pagenavi(); ?>
+</div>
 
 <?php else : ?>
 <p>お知らせコンテンツはありません。</p>

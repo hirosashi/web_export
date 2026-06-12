@@ -80,10 +80,11 @@ add_action('after_setup_theme', function() {
     remove_theme_support('core-block-patterns');
 });
 
-// Enqueue themify framework CSS (themify-359282732.css)
+// Enqueue themify framework CSS
 add_action('wp_enqueue_scripts', function() {
     wp_enqueue_style('themify-concate', get_template_directory_uri() . '/assets/css/themify-359282732.css', [], null);
-    wp_enqueue_style('vt-custom', get_template_directory_uri() . '/vt_custom.css', [], null);
+    wp_enqueue_style('themify-concate-ref', get_template_directory_uri() . '/assets/css/themify-1429799131.css', ['themify-concate'], null);
+    wp_enqueue_style('vt-custom', get_template_directory_uri() . '/vt_custom.css', ['themify-concate-ref'], null);
 }, 5);
 
 // Use output buffer to strip remaining inline styles/scripts that can't be dequeued
@@ -102,4 +103,11 @@ add_action('template_redirect', function() {
 // Ensure jQuery is loaded on frontend (needed for anchor scroll and easing)
 add_action('wp_enqueue_scripts', function() {
     wp_enqueue_script('jquery');
+});
+
+// Set archive posts per page to 1 (for testing pagination)
+add_action('pre_get_posts', function($query) {
+    if (!is_admin() && $query->is_main_query() && $query->is_category()) {
+        $query->set('posts_per_page', 1);
+    }
 });
