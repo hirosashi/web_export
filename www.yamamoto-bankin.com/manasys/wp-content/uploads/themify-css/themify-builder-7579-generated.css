@@ -1,0 +1,14 @@
+/* Generated from tbuilder_layout_part: s-icon */
+.themify_builder_content-7579 .tb_q1oa890.module_subrow{border-top:1px solid #fff}
+.themify_builder_content-7579 .tb_q1oa890.module_subrow>.subrow_inner{--align_content:var(--align_center);--colG:var(--none)}
+.themify_builder_content-7579 .tb_3zdp891.module_column,.themify_builder_content-7579 .tb_ybk2503.module_column{background-color:#175899;border-right:1px solid #fff}
+.themify_builder_content-7579 .tb_cvzn616.module-icon,.themify_builder_content-7579 .tb_10xd503.module-icon,.themify_builder_content-7579 .tb_q3mb38.module-icon{padding-top:5px;padding-bottom:5px}
+.themify_builder_content-7579 .tb_cvzn616.module-icon .module-icon-item em{font-size:25px}
+.themify_builder_content-7579 .tb_10xd503.module-icon .module-icon-item em,.themify_builder_content-7579 .tb_q3mb38.module-icon .module-icon-item em{font-size:30px}
+.themify_builder_content-7579 .tb_f9ny38.module_column{background-color:#175899;border-right:0 solid #fff}
+
+@media(max-width:680px){
+.themify_builder_content-7579 .tb_3zdp891.module_column a,.themify_builder_content-7579 .tb_ybk2503.module_column a,.themify_builder_content-7579 .tb_f9ny38.module_column a{text-decoration:none}
+.themify_builder_content-7579 .tb_cvzn616.module-icon .module-icon-item em{font-size:18px}
+.themify_builder_content-7579 .tb_10xd503.module-icon .module-icon-item em,.themify_builder_content-7579 .tb_q3mb38.module-icon .module-icon-item em{font-size:22px}
+}
