@@ -1,0 +1,1418 @@
+@charset "UTF-8";
+/*
+Theme Name: ManaSys
+Template: basic
+Author: Trendmake
+Copyright: (c) 2020 Trendmake
+Version: 20200403
+*/
+
+/*******************************
+Common Setting
+*******************************/
+body {
+	font-family: 'YuGothic', 'Yu Gothic', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
+	font-size: 16px;
+	line-height: 2;
+}
+#content {
+	padding: 0;
+}
+/* Those Classes change row_inner width,
+   when you set the Themify Builder > Row Options > Row Width to Default and Boxed. */
+/*.module_row > .row_inner,
+.module-layout-part .module_row.fullwidth_row_container > .row_inner {
+	width: 100%;
+}*/
+body table{
+	width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+/*******************************
+Header Fix
+*******************************/
+#header.header {
+	height: auto;
+	border-bottom: none;
+}
+
+/* Header Site Branding */
+#site-logo,
+#site-description {
+	position: static;
+}
+#site-logo {
+	line-height: 1;
+}
+#site-logo a,
+#site-logo a img {
+	display: block;
+}
+/* Search Form in Header */
+#headerwrap #header #searchform {
+	position: static;
+}
+#headerwrap #header #searchform #s {
+	float: none;
+}
+
+/*******************************
+Footer Fix
+*******************************/
+#footer {
+	border-top: none;
+	clear: none;
+	padding: 0;
+}
+#pc-backtop {
+	display: block;
+	position: fixed;
+	z-index: 500;
+	bottom: 50px;
+	right: 50px;
+	opacity: 0;
+	transition: opacity .3s;
+	width: 32px;
+	height: 32px;
+}
+#pc-backtop svg{ fill: skyblue; }
+#pc-backtop.is-visible {
+	opacity: 1;
+}
+#pc-backtop.is-visible:hover {
+	opacity: .7;
+}
+#pc-backtop a,
+#pc-backtop a img {
+	display: block;
+}
+.sp-footer-icons-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	z-index: 600;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: calc( env(safe-area-inset-bottom) / 2 );
+	background: #4f4f4f;
+}
+#footer .sp-footer-icons-container svg{
+	display: block;
+	text-align: center;
+	fill: #1f7bb6;
+	width: 100%;
+	height: 16px;
+	margin-bottom: 8px;
+}
+#footer .sp-footer-icons-container a {
+	display: block;
+	width: 100%;
+	line-height: 1;
+	text-align: center;
+	background-color: #fafafa;
+	text-decoration: none;
+	font-size:10px;
+	padding: 10px 0 6px;
+	border-left:1px solid #1f7bb6;
+}
+#footer .sp-footer-icons-container a:first-child{
+	border-left:0;
+}
+
+
+/*******************************
+Contact form
+*******************************/
+.wpcf7 table tr th{
+	width:30%;
+	text-align: left;
+}
+.wpcf7 table tr th,
+.wpcf7 table tr td{
+	padding:10px 15px
+}
+.wpcf7 table tr td input,
+.wpcf7 table tr td select,
+.wpcf7 table tr td textarea{
+	background-color: #f3f3f3;
+    border: solid 1px #ddd;
+    padding: 6px 10px;
+    border-radius: 5px;
+	width:100%;
+	max-width:100%;
+	box-sizing:border-box;
+}
+.wpcf7 table tr td span input{
+	margin-top:10px;
+}
+.wpcf7 table tr td span:first-child input{
+	margin-top:0px;
+}
+.wpcf7 table tr td input[type="radio"],
+.wpcf7 table tr td input[type="checkbox"]{
+	width:auto;
+}
+.wpcf7 .submit_btn{
+	display:block;
+}
+.wpcf7 .submit_btn input[type="submit"]{
+	display:block;
+	width:250px;
+	margin:0 auto;
+}
+/*---------------------
+CSS-FONT
+--------------------*/
+
+body .site{
+    font-family: "ヒラギノ角ゴ ProN W3″", "Hiragino Kaku Gothic ProN", "Yu Gothic Medium", "游ゴシック Medium", YuGothic,"メイリオ", Meiryo, sans-serif;
+    color: #000;
+    line-height: 200%;
+    font-size:14px;
+}
+
+#pagewrap .font-min{
+    font-family: "Times New Roman","游明朝", YuMincho, "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","ＭＳ Ｐ明朝", "メイリオ", Meiryo, serif;
+}
+
+
+/*---------------------
+end of CSS-FONT
+--------------------*/
+
+
+/*---------------------
+CSS-FIX_THEMIFY
+--------------------*/
+
+body.themify_builder_active .module_row.fix-row-active-p-20 .row_inner{
+    padding: 25px 0px;
+    border: 1px dashed #ccc;
+}
+body.themify_builder_active .module_row.fix-row-active-p-top-20{
+    padding-top: 20px;
+}
+
+.themify_builder_active .module_row .fix-subrow-active-p-t-20{
+    padding-top: 20px;
+}
+
+
+
+/*
+ * fix-button active 
+ * lên 35px;
+*/
+body.themify_builder_active   
+.module_subrow .active_module .tb_action_wrap{
+	bottom:-50px !important;
+}
+
+body.themify_builder_active  
+.module_subrow .active_module .tb_action_wrap{
+	bottom:-50px !important;
+}
+
+
+
+/* fix-index-99
+ * tăng zindex chomodule
+* đặt class module
+ * */
+.themify_builder_active .themify_builder_content 
+.fix-index-99{
+	z-index:99;
+}
+.themify_builder_active  .themify_builder_content 
+.fix-index-999{
+	z-index:999;
+}
+
+
+
+
+/* fix-subrow-inline-one-line
+ * subrow-flex-wrap(xuống hàng ngay từ desktop)
+ * làm cho subrow inline trên 1 hàng
+ * đặt class cho module_row
+ * */
+body.themify_builder_active .themify_builder_content  .fix-subrow-inline-one-line .module_subrow{
+	min-width:60px;
+  	min-height:50px;
+}
+body .themify_builder_content  .fix-subrow-inline-one-line .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line .tb-column-inner{
+    display: flex;
+    justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-grow:1;
+}
+body .themify_builder_content  .fix-subrow-inline-one-line .module_subrow .tb-column-inner{
+    display: block;
+}
+
+
+body .themify_builder_content  .fix-subrow-inline-one-line .tb_holder .active_module,
+body .themify_builder_content  .fix-subrow-inline-one-line .module_subrow{
+	width:auto;
+}
+
+
+body .themify_builder_content  .fix-subrow-inline-one-line .tb_holder .tb_holder .active_module{ 
+    width: 100%;
+    display: block;
+    flex-grow: 1;
+}
+
+
+body .themify_builder_content  .fix-subrow-inline-one-line .module_subrow .module_column{
+	flex-grow:1;
+	display:flex;
+}
+
+
+
+/*width-100% xuống hàng*/
+body .themify_builder_content  .fix-subrow-inline-one-line .tb_holder .active_module:has(> .subrow-w-100),
+body .themify_builder_content  .fix-subrow-inline-one-line .module_subrow.subrow-w-100{
+	width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+
+/*subrow-wrap*/
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-nowrap .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-nowrap .tb-column-inner{
+	flex-wrap: nowrap;
+}
+
+/*subrow-grow*/
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-grow-1 .tb_holder .active_module {
+	flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-grow-1 .tb_holder .module_subrow{
+	width:100%;
+}
+
+/*subrow-col*/
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-f-col .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-f-col .tb-column-inner{
+	flex-direction:column;
+}
+
+
+
+/*subrow-flex*/
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-between .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-between .tb-column-inner{
+    justify-content:space-between;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-start .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-start .tb-column-inner{
+    justify-content:flex-start;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-end .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-end .tb-column-inner{
+    justify-content:flex-end;
+	width: 100%;
+}
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-center .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-center .tb-column-inner{
+    justify-content:center;
+	width: 100%;
+}
+
+
+
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-between .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-between .tb-column-inner{
+    align-items:space-between;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-start .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-start .tb-column-inner{
+    align-items:flex-start;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-end .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-end .tb-column-inner{
+    align-items:flex-end;
+	width: 100%;
+}
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-center .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.suborw-a-center .tb-column-inner{
+    align-items:center;
+	width: 100%;
+}
+
+
+
+
+
+/* fix-module-inline-one-line
+ * flex-wrap(xuống hàng ngay từ desktop)
+ * làm cho module inline trên 1 hàng
+ * đặt class cho module sub-col
+ * */
+
+body.themify_builder_active .themify_builder_content .module_subrow .fix-module-inline-one-line .module{
+	min-width:50px;
+  	min-height:50px;
+}
+
+body .themify_builder_content .module_subrow .fix-module-inline-one-line .tb_holder,
+body .themify_builder_content .module_subrow .fix-module-inline-one-line .tb-column-inner{
+    display: flex;
+    justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-grow:1;
+}
+
+body .themify_builder_content .module_subrow .fix-module-inline-one-line .tb_holder .active_module,
+body .themify_builder_content .module_subrow .fix-module-inline-one-line .module {
+	width:auto;
+}
+
+body .themify_builder_content .module_subrow .fix-module-inline-one-line .tb_holder .active_module {
+    width: auto;
+    display: flex;
+    flex-grow:0;
+}
+
+
+
+/*fix-m-absolute*/
+.themify_builder_active  .module_subrow .fix-module-inline-one-line .tb_holder .active_module:has(> .fix-m-absolute){
+	position:static;
+}
+
+
+/*width-100% xuống hàng*/
+body .themify_builder_content  .module_subrow .fix-module-inline-one-line .tb_holder .active_module:has(> .m-w-100),
+body .themify_builder_content .module_subrow .fix-module-inline-one-line .module.m-w-100{
+	width: 100%;
+    display: block;
+    flex-grow: 1;
+}
+
+/*module-grow*/
+body .themify_builder_content  .fix-module-inline-one-line.m-grow-1 .tb_holder .active_module{
+	flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+body .themify_builder_content  .fix-module-inline-one-line.m-grow-1 .tb_holder .module{
+	width:100%;
+}
+
+/*module-wrap*/
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-nowrap .tb_holder, 
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-nowrap .tb-column-inner {
+    flex-wrap: nowrap;
+}
+
+
+/*module-col*/
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-col .tb_holder,
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-col .tb-column-inner{
+	flex-direction:column;
+}
+
+
+
+/*module-flex*/
+body .themify_builder_content  .fix-module-inline-one-line.m-j-between .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-j-between .tb-column-inner{
+    justify-content:space-between;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-j-start .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-j-start .tb-column-inner{
+    justify-content:flex-start;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-j-end .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-j-end .tb-column-inner{
+    justify-content:flex-end;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-j-center .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-j-center .tb-column-inner{
+    justify-content:center;
+	width: 100%;
+	
+}
+
+
+
+body .themify_builder_content  .fix-module-inline-one-line.m-a-between .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-a-between .tb-column-inner{
+    align-items:space-between;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-a-start .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-a-start .tb-column-inner{
+    align-items:flex-start;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-a-end .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-a-end .tb-column-inner{
+    align-items:flex-end;
+	width: 100%;
+}
+body .themify_builder_content  .fix-module-inline-one-line.m-a-center .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-a-center .tb-column-inner{
+    align-items:center;
+	width: 100%;
+	align-content: center;
+}
+
+
+
+/* fix-subrow-inline
+ * làm cho width auto
+ * sub-row inline
+ * subrow-w-100
+ * subrow-w-100-768
+ * subrow-w-100-680
+* đặt class cho subrow
+ * */
+
+.themify_builder_active  .themify_builder_content 
+.fix-subrow-inline{
+    display: inline-flex;
+    width: auto;
+    margin: 0px auto;
+}
+.themify_builder_active .themify_builder_content 
+.fix-subrow-inline{
+	min-width:100px;
+}
+
+
+
+body  .themify_builder_content .module_row
+.fix-subrow-inline{
+    display: inline-flex;
+    width: auto;
+    margin: 0px auto;
+}
+body .themify_builder_content .module_row
+.fix-subrow-inline{
+	min-width:100px;
+}
+
+
+body .themify_builder_content 
+.subrow-w-100{
+	width:100%;
+}
+
+
+
+
+
+/* fix-subrow-absolute
+ * làm cho width auto
+ * sub-row inline
+* đặt class cho subrow
+ * */
+
+
+.themify_builder_active  .themify_builder_content 
+.fix-subrow-absolute{
+    display: inline-flex;
+    width: auto;
+    margin: 0px auto;
+}
+
+.themify_builder_active  .themify_builder_content 
+ .active_subrow:has(> .fix-subrow-absolute) {
+	position:static;
+}
+
+
+.themify_builder_active .themify_builder_content 
+.fix-subrow-absolute{
+	min-width:100px;
+}
+
+
+
+body  .themify_builder_content .module_row
+.fix-subrow-absolute{
+    display: inline-flex;
+    width: auto;
+    margin: 0px auto;
+}
+body .themify_builder_content .module_row
+.fix-subrow-absolute{
+	min-width:100px;
+}
+
+
+
+
+
+
+
+
+
+/* fix-module-icon
+ * làm ảnh trong cho module icon xêp thẳng hàng
+* đặt class cho module
+ * */
+
+
+body .themify_builder_content 
+.fix-module-icon .module-icon-item{
+    display: inline-flex;
+    align-items: center;
+}
+
+body .themify_builder_content 
+.fix-module-icon img{
+	display: block;
+    padding: 0px;
+    margin-left: 0px;
+	padding-top: 7px;	
+}
+
+body .themify_builder_content 
+.fix-module-icon em{
+	align-self: center !important;
+}
+
+
+body .themify_builder_content 
+.fix-module-icon span{
+	display:inline-block;
+	margin:0px 10px;
+}
+
+
+body .themify_builder_content 
+.fix-module-icon a{
+    display: inline-flex;
+    align-items: flex-start;
+}
+
+
+
+
+
+/* fix-module-icon-radius 
+ * làm cho ảnh iconkhông có  radius
+* làm cho image icon kích thước auto
+* đặt class cho module
+ * */
+body .themify_builder_content 
+.fix-module-icon-radius img{
+    border-radius: 0;
+    max-width: none;
+    width: auto;
+    height: auto;
+}
+
+/* fix-module-icon-top
+ * làm cho ảnh icon align-top
+* 
+* đặt class cho module
+ * */
+body .themify_builder_content 
+.fix-module-icon-top .module-icon-item{
+	align-items: flex-start;
+}
+body .themify_builder_content .fix-module-icon-top em {
+    align-self: flex-start !important;
+}
+
+
+
+/* fix-module-icon-link
+* làm cho module-icon hover
+* đặt class cho module
+ * */
+body .themify_builder_content 
+.fix-module-icon-link a{
+	position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+body .themify_builder_content 
+.fix-module-icon-link .module-icon-item{
+	position:relative;
+}
+
+
+
+@media screen and (max-width: 768px){
+/*
+ * subrow 768
+ * 
+ * 
+ * 
+ * */	
+/*width-100% xuống hàng*/
+body .themify_builder_content  .fix-subrow-inline-one-line .tb_holder .active_module:has(> .subrow-w-100-768),
+body .themify_builder_content  .fix-subrow-inline-one-line .module_subrow.subrow-w-100-768{
+	width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+
+
+/*subrow-wrap*/
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-nowrap-768 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-nowrap-768 .tb-column-inner{
+	flex-wrap: nowrap;
+}	
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-wrap-768 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-wrap-768 .tb-column-inner{
+	flex-wrap: wrap;
+}	
+	
+/*subrow-grow*/
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-grow-1-768 .tb_holder .module_subrow{
+	width:100%;
+}
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-grow-1-768 .tb_holder .active_module {
+	flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+	
+	
+/*subrow-col*/
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-f-col-768 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-f-col-768 .tb-column-inner{
+	flex-direction:column;
+}
+	
+	
+
+/*subrow-flex*/
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-between-768 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-between-768 .tb-column-inner{
+    justify-content:space-between;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-start-768 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-start-768 .tb-column-inner{
+    justify-content:flex-start;
+	width: 100%;
+}
+
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-end-768 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-end-768 .tb-column-inner{
+    justify-content:flex-end;
+	width: 100%;
+}
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-center-768 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-center-768 .tb-column-inner{
+    justify-content:center;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-between-768 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-between-768 .tb-column-inner{
+    align-items:space-between;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-start-768 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-start-768 .tb-column-inner{
+    align-items:flex-start;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-end-768 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-end-768 .tb-column-inner{
+    align-items:flex-end;
+	width: 100%;
+}
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-center-768 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.suborw-a-center-768 .tb-column-inner{
+    align-items:center;
+	width: 100%;
+}
+
+/* subrow-wrap */	
+	
+	
+	
+	
+/*
+ * module 768
+ * 
+ * 
+ * 
+ * */
+	
+/*module width-100%*/
+body .themify_builder_content  .module_subrow .fix-module-inline-one-line .tb_holder .active_module:has(> .m-w-100-768),
+body .themify_builder_content .module_subrow .fix-module-inline-one-line .module.m-w-100-768{
+	width: 100%;
+    display: block;
+    flex-grow: 1;
+}
+
+/*module-grow*/
+body .themify_builder_content  .fix-module-inline-one-line.m-grow-1-768 .tb_holder .active_module{
+	flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+body .themify_builder_content  .fix-module-inline-one-line.m-grow-1-768 .tb_holder .module{
+	width:100%;
+}
+
+/*module-wrap*/
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-nowrap-768 .tb_holder, 
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-nowrap-768 .tb-column-inner {
+    flex-wrap: nowrap;
+}
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-wrap-768 .tb_holder, 
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-wrap-768 .tb-column-inner {
+    flex-wrap: wrap;
+}
+
+/*module-col*/
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-f-col-768 .tb_holder,
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-f-col-768 .tb-column-inner{
+	flex-direction:column;
+}
+
+
+
+/*module-flex*/
+body .themify_builder_content  .fix-module-inline-one-line.m-j-between-768 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-j-between-768 .tb-column-inner{
+    justify-content:space-between;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-j-start-768 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-j-start-768 .tb-column-inner{
+    justify-content:flex-start;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-j-end-768 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-j-end-768 .tb-column-inner{
+    justify-content:flex-end;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-j-center-768 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-j-center-768 .tb-column-inner{
+    justify-content:center;
+	width: 100%;
+	
+}
+
+
+
+body .themify_builder_content  .fix-module-inline-one-line.m-a-between-768 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-a-between-768 .tb-column-inner{
+    align-items:space-between;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-a-start-768 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-a-start-768 .tb-column-inner{
+    align-items:flex-start;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-a-end-768 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-a-end-768 .tb-column-inner{
+    align-items:flex-end;
+	width: 100%;
+}
+body .themify_builder_content  .fix-module-inline-one-line.m-a-center-768 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-a-center-768 .tb-column-inner{
+    align-items:center;
+	width: 100%;
+	align-content: center;
+}
+	
+body .themify_builder_content .module_row 
+.subrow-w-100-768{
+	width:100%;
+}	
+	
+	
+	
+	
+}/*@media-768*/
+
+
+@media screen and (max-width: 680px){
+	
+	
+/*
+ * subrow 680
+ * 
+ * 
+ * 
+ * */	
+/*width-100% xuống hàng*/
+body .themify_builder_content  .fix-subrow-inline-one-line .tb_holder .active_module:has(> .subrow-w-100-680),
+body .themify_builder_content  .fix-subrow-inline-one-line .module_subrow.subrow-w-100-680{
+	width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+
+
+/*subrow-wrap*/
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-nowrap-680 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-nowrap-680 .tb-column-inner{
+	flex-wrap: nowrap;
+}	
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-wrap-680 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-wrap-680 .tb-column-inner{
+	flex-wrap: wrap;
+}	
+	
+/*subrow-grow*/
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-grow-1-680 .tb_holder .module_subrow{
+	width:100%;
+}
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-grow-1-680 .tb_holder .active_module {
+	flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+	
+	
+/*subrow-col*/
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-f-col-680 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-f-col-680 .tb-column-inner{
+	flex-direction:column;
+}
+	
+	
+
+/*subrow-flex*/
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-between-680 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-between-680 .tb-column-inner{
+    justify-content:space-between;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-start-680 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-start-680 .tb-column-inner{
+    justify-content:flex-start;
+	width: 100%;
+}
+
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-end-680 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-end-680 .tb-column-inner{
+    justify-content:flex-end;
+	width: 100%;
+}
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-center-680 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-j-center-680 .tb-column-inner{
+    justify-content:center;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-between-680 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-between-680 .tb-column-inner{
+    align-items:space-between;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-start-680 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-start-680 .tb-column-inner{
+    align-items:flex-start;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-end-680 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-end-680 .tb-column-inner{
+    align-items:flex-end;
+	width: 100%;
+}
+body .themify_builder_content  .fix-subrow-inline-one-line.subrow-a-center-680 .tb_holder,
+body .themify_builder_content  .fix-subrow-inline-one-line.suborw-a-center-680 .tb-column-inner{
+    align-items:center;
+	width: 100%;
+}
+
+/* subrow-wrap */	
+	
+	
+	
+	
+/*
+ * module 680
+ * 
+ * 
+ * 
+ * */
+	
+/*module width-100%*/
+body .themify_builder_content  .module_subrow .fix-module-inline-one-line .tb_holder .active_module:has(> .m-w-100-680),
+body .themify_builder_content .module_subrow .fix-module-inline-one-line .module.m-w-100-680{
+	width: 100%;
+    display: block;
+    flex-grow: 1;
+}
+
+/*module-grow*/
+body .themify_builder_content  .fix-module-inline-one-line.m-grow-1-680 .tb_holder .active_module{
+	flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+body .themify_builder_content  .fix-module-inline-one-line.m-grow-1-680 .tb_holder .module{
+	width:100%;
+}
+
+/*module-wrap*/
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-nowrap-680 .tb_holder, 
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-nowrap-680 .tb-column-inner {
+    flex-wrap: nowrap;
+}
+
+
+/*module-col*/
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-f-col-680 .tb_holder,
+body .themify_builder_content .module_subrow .fix-module-inline-one-line.m-f-col-680 .tb-column-inner{
+	flex-direction:column;
+}
+
+
+
+/*module-flex*/
+body .themify_builder_content  .fix-module-inline-one-line.m-j-between-680 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-j-between-680 .tb-column-inner{
+    justify-content:space-between;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-j-start-680 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-j-start-680 .tb-column-inner{
+    justify-content:flex-start;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-j-end-680 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-j-end-680 .tb-column-inner{
+    justify-content:flex-end;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-j-center-680 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-j-center-680 .tb-column-inner{
+    justify-content:center;
+	width: 100%;
+	
+}
+
+
+
+body .themify_builder_content  .fix-module-inline-one-line.m-a-between-680 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-a-between-680 .tb-column-inner{
+    align-items:space-between;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-a-start-680 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-a-start-680 .tb-column-inner{
+    align-items:flex-start;
+	width: 100%;
+}
+
+body .themify_builder_content  .fix-module-inline-one-line.m-a-end-680 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-a-end-680 .tb-column-inner{
+    align-items:flex-end;
+	width: 100%;
+}
+body .themify_builder_content  .fix-module-inline-one-line.m-a-center-680 .tb_holder,
+body .themify_builder_content  .fix-module-inline-one-line.m-a-center-680 .tb-column-inner{
+    align-items:center;
+	width: 100%;
+	align-content: center;
+}
+	
+body .themify_builder_content .module_row 
+.subrow-w-100-680{
+	width:100%;
+}	
+	
+}/*@media-680
+
+
+
+
+
+/*---------------------
+end of CSS-FIX_THEMIFY
+--------------------*/
+
+
+
+
+
+
+/*---------------------
+CSS-FLEX
+--------------------*/
+body .themify_build_content .flex{
+	display:flex;
+}
+body .themify_build_content .a-start{
+	align-items:flex-start;
+}
+body .themify_build_content .a-end{
+	align-items:flex-end;
+}
+body .themify_build_content .a-center{
+	align-items:center;
+}
+body .themify_build_content .j-start{
+	justify-content:flex-start;
+}
+body .themify_build_content .j-end{
+	justify-content:flex-end;
+}
+body .themify_build_content .j-center{
+	justify-content:center;
+}
+body .themify_build_content .j-space{
+	justify-content:space-between;
+}
+
+body .themify_build_content .flex-grow{
+	flex-grow:1;
+}
+
+body .themify_build_content .flex-1{
+	flex:1;
+}
+
+body .themify_build_content .flex-col{
+	flex-direction:column;
+}
+
+
+
+/*-@media-768*/
+@media screen and (max-width: 768px){
+body .themify_build_content .flex-768{
+	display:flex;
+}
+body .themify_build_content .a-start-768{
+	align-items:flex-start;
+}
+body .themify_build_content .a-end-768{
+	align-items:flex-end;
+}
+body .themify_build_content .a-center-768{
+	align-items:center;
+}
+body .themify_build_content .j-start-768{
+	justify-content:flex-start;
+}
+body .themify_build_content .j-end-768{
+	justify-content:flex-end;
+}
+body .themify_build_content .j-center-768{
+	justify-content:center;
+}
+body .themify_build_content .j-space-768{
+	justify-content:space-between;
+}
+
+body .themify_build_content .flex-grow-768{
+	flex-grow:1;
+}
+
+body .themify_build_content .flex-1-768{
+	flex:1;
+}
+
+body .themify_build_content .flex-col-768{
+	flex-direction:column;
+}
+
+}
+/*-@media-680-end*/
+
+
+
+
+
+/*-@media-680*/
+@media screen and (max-width: 680px){
+
+body .themify_build_content .flex-680{
+	display:flex;
+}
+body .themify_build_content .a-start-680{
+	align-items:flex-start;
+}
+body .themify_build_content .a-end-680{
+	align-items:flex-end;
+}
+body .themify_build_content .a-center-680{
+	align-items:center;
+}
+body .themify_build_content .j-start-680{
+	justify-content:flex-start;
+}
+body .themify_build_content .j-end-680{
+	justify-content:flex-end;
+}
+body .themify_build_content .j-center-680{
+	justify-content:center;
+}
+body .themify_build_content .j-space-680{
+	justify-content:space-between;
+}
+
+body .themify_build_content .flex-grow-680{
+	flex-grow:1;
+}
+
+body .themify_build_content .flex-1-680{
+	flex:1;
+}
+
+body .themify_build_content .flex-col-680{
+	flex-direction:column;
+}
+}
+/*-@media-680-end*/
+
+
+
+/*---------------------
+end of CSS-FLEX
+--------------------*/
+
+
+
+/*---------------------
+CSS-SHARE
+--------------------*/
+body a,
+body a img
+{
+  transition:all 0.3s;
+}
+body a{
+  outline:none;
+}
+
+body .a-none a,
+body .a-none img
+{
+  pointer-events:none;
+}
+
+
+body a:hover img{
+/*   opacity:0.6; */
+}
+
+body .tel-link a{
+    pointer-events:none;
+}
+.module p{
+  margin-bottom:0;
+}
+
+body .frame-policy{
+	overflow:auto;
+}
+
+
+body .frame-block iframe, body .frame-block object {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+body .ov-hide{
+  overflow:hidden;
+}
+
+body .themify_builder_content  .max-width-1600{
+	width:100%;
+	max-width:1600px;
+	margin:0px auto;
+} 
+body .themify_builder_content  .max-width-1280{
+	width:100%;
+	max-width:1280px;
+	margin:0px auto;
+} 
+body .themify_builder_content  .max-width-1200{
+	width:100%;
+	max-width:1200px;
+	margin:0px auto;
+} 
+
+body .themify_builder_content  .max-width-1100{
+	width:100%;
+	max-width:1100px;
+	margin:0px auto;
+} 
+
+body .themify_builder_content  .max-width-1000{
+	width:100%;
+	max-width:1000px;
+	margin:0px auto;
+} 
+
+
+body .themify_builder_content .bg-100-100{
+	background-size:100% 100%;
+} 
+body .themify_builder_content .bg-100-auto{
+	background-size:100% auto;
+} 
+body .themify_builder_content .bg-auto-100{
+	background-size:auto  100%;
+} 
+body .themify_builder_content .no-wrap {
+	white-space:nowrap;
+} 
+body .themify_builder_content  .m-write-mode{
+	writing-mode: tb-rl;
+}
+
+/*@768*/
+@media screen and (max-width: 768px){
+
+body .tel-link a{
+    pointer-events:auto;
+}
+body .image-center-768 .image-wrap {
+  width:100%;
+  text-align:center;
+} 
+
+
+body .themify_builder_content .bg-100-100-768{
+	background-size:100% 100%;
+} 
+body .themify_builder_content .bg-100-auto-768{
+	background-size:100% auto;
+} 
+body .themify_builder_content .bg-auto-100-768{
+	background-size:auto  100%;
+} 
+body .themify_builder_content .no-wrap-wrap-768 {
+	white-space:wrap;
+} 
+body .themify_builder_content  .m-write-mode-no-768{
+	writing-mode: unset;
+}
+	
+body .themify_builder_content  .table-full-768 .tb_text_wrap{
+	overflow:auto;
+}	
+	
+body .themify_builder_content  .table-full-768 .tb_text_wrap table{
+	width:150%;
+	min-width:768px;
+}		
+	
+	
+}
+/*@768*/
+
+
+
+
+/*@680*/
+@media screen and (max-width: 680px){
+body .image-center-680 .image-wrap {
+  width:100%;
+  text-align:center;
+} 
+
+body .themify_builder_content .bg-100-100-680{
+	background-size:100% 100%;
+} 
+body .themify_builder_content .bg-100-auto-680{
+	background-size:100% auto;
+} 
+body .themify_builder_content .bg-auto-100-680{
+	background-size:auto  100%;
+} 
+body .themify_builder_content .no-wrap-wrap-680{
+	white-space:wrap;
+} 
+body .themify_builder_content  .m-write-mode-no-680{
+	writing-mode: unset;
+}
+body .themify_builder_content  .table-full-680 .tb_text_wrap{
+	overflow:auto;
+}		
+	
+body .themify_builder_content  .table-full-680 .tb_text_wrap table{
+	width:100%;
+/* 	min-width:680px; */
+	min-width: auto;
+}		
+	
+	
+	
+	
+}
+/*@680*/
+
+
+
+/*---------------------
+end of CSS-SHARE
+--------------------*/
+
+
+
+
+
+
+
+
+
+
+
