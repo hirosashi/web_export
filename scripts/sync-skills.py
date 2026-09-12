@@ -13,7 +13,10 @@ import json
 import os
 import re
 import shutil
+import sys
 from pathlib import Path
+
+import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 SKILLS = ROOT / ".agents" / "skills"
@@ -26,12 +29,15 @@ VERSION = "1.0.0"
 def frontmatter(path: Path) -> dict:
     text = path.read_text(encoding="utf-8")
     m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
-    meta = {}
-    if m:
-        for line in m.group(1).splitlines():
-            if ":" in line:
-                k, v = line.split(":", 1)
-                meta[k.strip()] = v.strip().strip("'\"")
+    if not m:
+        sys.exit(f"{path}: missing YAML frontmatter")
+    meta = yaml.safe_load(m.group(1)) or {}
+    for key in ("name", "description"):
+        if not isinstance(meta.get(key), str) or not meta[key].strip():
+            sys.exit(f"{path}: frontmatter '{key}' must be a non-empty string")
+    if meta["name"] != path.parent.name:
+        sys.exit(f"{path}: frontmatter name '{meta['name']}' must match directory '{path.parent.name}'")
+    meta["description"] = " ".join(meta["description"].split())
     return meta
 
 
