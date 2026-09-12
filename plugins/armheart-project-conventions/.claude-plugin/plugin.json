@@ -1,0 +1,8 @@
+{
+  "name": "armheart-project-conventions",
+  "description": "スイーツ生産管理システム（アルムハート／phase1_dev）の開発規約と環境情報。このプロジェクトでコードを書く・反映する・報告する前に必ず読む。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hirosashi"
+  }
+}

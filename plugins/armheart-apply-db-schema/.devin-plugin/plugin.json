@@ -1,0 +1,5 @@
+{
+  "name": "armheart-apply-db-schema",
+  "version": "1.0.0",
+  "description": "テーブル追加・列変更を db/schema.sql に追記し、ローカル sweets_dev と開発サーバDBの両方へ適用して存在確認する。「テーブル追加」「カラム追加」「スキーマ変更」の際に使う。"
+}

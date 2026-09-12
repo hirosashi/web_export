@@ -1,0 +1,5 @@
+{
+  "name": "armheart-add-screen",
+  "version": "1.0.0",
+  "description": "新しい画面（Controller + View + ルート + 権限 + ヘッダーメニュー + 業務工程）をこのプロジェクトの規約に沿って追加する。「〇〇画面を追加」「〇〇の登録機能を作る」時に使う。"
+}

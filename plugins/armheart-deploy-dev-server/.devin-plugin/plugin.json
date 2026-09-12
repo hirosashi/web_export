@@ -1,0 +1,5 @@
+{
+  "name": "armheart-deploy-dev-server",
+  "version": "1.0.0",
+  "description": "開発サーバ（さくら、ホストは secret ARMHEART_DEV_HOST）へ src/ を反映し、HTTP疎通を確認する。「開発サーバへ反映」「デプロイ」「さくらに上げる」と言われたら使う。"
+}

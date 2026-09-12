@@ -1,0 +1,1 @@
+../../../../.agents/skills/armheart-build-seed-from-excel/SKILL.md

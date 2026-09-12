@@ -1,0 +1,5 @@
+{
+  "name": "armheart-run-local-server",
+  "version": "1.0.0",
+  "description": "ローカルでPHP内蔵サーバを起動し、admin でログインして画面確認できる状態にする。セッション再開後・画面変更の目視確認時に使う。"
+}

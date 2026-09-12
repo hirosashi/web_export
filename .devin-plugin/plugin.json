@@ -6,6 +6,51 @@
     {
       "source": "git-subdir",
       "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/armheart-add-screen"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/armheart-apply-db-schema"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/armheart-build-seed-from-excel"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/armheart-cleanup-test-data"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/armheart-deploy-dev-server"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/armheart-project-conventions"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/armheart-reset-admin-password"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/armheart-run-local-server"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/armheart-verify-changes"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
       "path": "plugins/joomla-backdoor-check"
     },
     {

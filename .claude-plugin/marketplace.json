@@ -11,6 +11,87 @@
   },
   "plugins": [
     {
+      "name": "armheart-add-screen",
+      "source": "./plugins/armheart-add-screen",
+      "description": "新しい画面（Controller + View + ルート + 権限 + ヘッダーメニュー + 業務工程）をこのプロジェクトの規約に沿って追加する。「〇〇画面を追加」「〇〇の登録機能を作る」時に使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
+      "name": "armheart-apply-db-schema",
+      "source": "./plugins/armheart-apply-db-schema",
+      "description": "テーブル追加・列変更を db/schema.sql に追記し、ローカル sweets_dev と開発サーバDBの両方へ適用して存在確認する。「テーブル追加」「カラム追加」「スキーマ変更」の際に使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
+      "name": "armheart-build-seed-from-excel",
+      "source": "./plugins/armheart-build-seed-from-excel",
+      "description": "エンドユーザー提供のExcel（配合表・原価計算表・発注書）から db/seed_real.sql を生成し、材料・部位・配合・商品・業者を投入する。新商品や配合改訂の資料を受け取ったときに使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
+      "name": "armheart-cleanup-test-data",
+      "source": "./plugins/armheart-cleanup-test-data",
+      "description": "ローカル動作確認で作った進捗・在庫調整・自動引き当て・テスト材料などを削除し、在庫数量を元に戻す。動作確認の後に必ず使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
+      "name": "armheart-deploy-dev-server",
+      "source": "./plugins/armheart-deploy-dev-server",
+      "description": "開発サーバ（さくら、ホストは secret ARMHEART_DEV_HOST）へ src/ を反映し、HTTP疎通を確認する。「開発サーバへ反映」「デプロイ」「さくらに上げる」と言われたら使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
+      "name": "armheart-project-conventions",
+      "source": "./plugins/armheart-project-conventions",
+      "description": "スイーツ生産管理システム（アルムハート／phase1_dev）の開発規約と環境情報。このプロジェクトでコードを書く・反映する・報告する前に必ず読む。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
+      "name": "armheart-reset-admin-password",
+      "source": "./plugins/armheart-reset-admin-password",
+      "description": "開発サーバまたはローカルの admin パスワードを ${ARMHEART_ADMIN_PW} に戻し、ログイン失敗ロックと初回変更強制を解除する。「ログインできない」「パスワードを戻して」と言われたら使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
+      "name": "armheart-run-local-server",
+      "source": "./plugins/armheart-run-local-server",
+      "description": "ローカルでPHP内蔵サーバを起動し、admin でログインして画面確認できる状態にする。セッション再開後・画面変更の目視確認時に使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
+      "name": "armheart-verify-changes",
+      "source": "./plugins/armheart-verify-changes",
+      "description": "コード変更後の検査一式（PHP構文チェック・Clockテスト・主要URLのステータス確認・禁止関数の検出）。反映前に必ず実行する。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
       "name": "joomla-backdoor-check",
       "source": "./plugins/joomla-backdoor-check",
       "description": "Joomlaサイトがバックドアやwebシェルに侵害されていないか、公式クリーン版との差分比較・書き込み可能フォルダの検索・DB内容の監査で調査するときに使う。",
