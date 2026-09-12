@@ -1,0 +1,5 @@
+{
+  "name": "armheart-build-seed-from-excel",
+  "version": "1.0.0",
+  "description": "エンドユーザー提供のExcel（配合表・原価計算表・発注書）から db/seed_real.sql を生成し、材料・部位・配合・商品・業者を投入する。新商品や配合改訂の資料を受け取ったときに使う。"
+}

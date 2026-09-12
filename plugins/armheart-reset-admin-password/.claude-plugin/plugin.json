@@ -1,0 +1,8 @@
+{
+  "name": "armheart-reset-admin-password",
+  "description": "開発サーバまたはローカルの admin パスワードを ${ARMHEART_ADMIN_PW} に戻し、ログイン失敗ロックと初回変更強制を解除する。「ログインできない」「パスワードを戻して」と言われたら使う。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hirosashi"
+  }
+}

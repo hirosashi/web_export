@@ -1,0 +1,8 @@
+{
+  "name": "armheart-cleanup-test-data",
+  "description": "ローカル動作確認で作った進捗・在庫調整・自動引き当て・テスト材料などを削除し、在庫数量を元に戻す。動作確認の後に必ず使う。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hirosashi"
+  }
+}

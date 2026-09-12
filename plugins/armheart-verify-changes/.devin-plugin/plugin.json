@@ -1,0 +1,5 @@
+{
+  "name": "armheart-verify-changes",
+  "version": "1.0.0",
+  "description": "コード変更後の検査一式（PHP構文チェック・Clockテスト・主要URLのステータス確認・禁止関数の検出）。反映前に必ず実行する。"
+}

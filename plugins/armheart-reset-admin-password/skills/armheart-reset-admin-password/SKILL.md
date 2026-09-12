@@ -1,0 +1,1 @@
+../../../../.agents/skills/armheart-reset-admin-password/SKILL.md
