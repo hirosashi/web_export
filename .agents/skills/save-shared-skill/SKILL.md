@@ -19,7 +19,7 @@ hirosashi/web_export は Devin と Claude Code の共有スキル置き場。正
 2. `.agents/skills/<kebab-case-name>/SKILL.md` を作成または更新する
    - 先頭に YAML frontmatter: `name`（ディレクトリ名と同じ）と `description`（1文。どんな時に使うかが分かるように）
    - 本文: 前提 / 手順 / 注意点 の構成で、他人が読んでそのまま実行できる粒度にする
-3. `python3 scripts/sync-skills.py` を実行して `plugins/` とマニフェストを再生成する（main への push 時に GitHub Actions でも自動実行されるが、PR 内で差分を見せるためにローカルでも実行する）
+3. `pip install pyyaml` 済みの環境で `python3 scripts/sync-skills.py` を実行して `plugins/` とマニフェストを再生成する（main への push 時に GitHub Actions でも自動実行されるが、PR 内で差分を見せるためにローカルでも実行する）
 4. PR を作成し、依頼者にマージを依頼する。マージ後は Devin のリポジトリ自動インデックスとプラグイン経由で全セッションに反映される
 
 ## 注意点
