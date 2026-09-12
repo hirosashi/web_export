@@ -1,5 +1,5 @@
 {
   "name": "joomla-backdoor-check",
   "version": "1.0.0",
-  "description": "Joomlaサイトがバックドアやwebシェルに侵害されていないか調査するスキル"
+  "description": "Joomlaサイトがバックドアやwebシェルに侵害されていないか、公式クリーン版との差分比較・書き込み可能フォルダの検索・DB内容の監査で調査するときに使う。"
 }

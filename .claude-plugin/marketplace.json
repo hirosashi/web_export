@@ -12,13 +12,21 @@
   "plugins": [
     {
       "name": "joomla-backdoor-check",
-      "displayName": "Joomla Backdoor Check",
       "source": "./plugins/joomla-backdoor-check",
-      "description": "Joomlaサイトがバックドアやwebシェルに侵害されていないか、公式クリーン版との差分比較・書き込み可能フォルダの捜索・DB内容の監査で調査する",
+      "description": "Joomlaサイトがバックドアやwebシェルに侵害されていないか、公式クリーン版との差分比較・書き込み可能フォルダの検索・DB内容の監査で調査するときに使う。",
       "version": "1.0.0",
-      "author": { "name": "hirosashi" },
-      "category": "security",
-      "tags": ["joomla", "security", "backdoor", "audit"]
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
+      "name": "save-shared-skill",
+      "source": "./plugins/save-shared-skill",
+      "description": "再利用できそうな作業手順・調査手順・ノウハウを、Devin と Claude Code の両方で使える共有スキルとして hirosashi/web_export に保存するときに使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
     }
   ]
 }
