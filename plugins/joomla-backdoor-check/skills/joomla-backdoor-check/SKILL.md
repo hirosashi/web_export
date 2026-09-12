@@ -1,0 +1,1 @@
+../../../../.agents/skills/joomla-backdoor-check/SKILL.md

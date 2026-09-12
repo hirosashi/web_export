@@ -1,0 +1,24 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "web_export",
+  "owner": {
+    "name": "hirosashi"
+  },
+  "description": "hirosashi's Claude Code skills marketplace. Mirrors skills also used by Devin under .agents/skills/.",
+  "version": "1.0.0",
+  "metadata": {
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "joomla-backdoor-check",
+      "displayName": "Joomla Backdoor Check",
+      "source": "./plugins/joomla-backdoor-check",
+      "description": "Joomlaサイトがバックドアやwebシェルに侵害されていないか、公式クリーン版との差分比較・書き込み可能フォルダの捜索・DB内容の監査で調査する",
+      "version": "1.0.0",
+      "author": { "name": "hirosashi" },
+      "category": "security",
+      "tags": ["joomla", "security", "backdoor", "audit"]
+    }
+  ]
+}

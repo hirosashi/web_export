@@ -1,0 +1,5 @@
+{
+  "name": "joomla-backdoor-check",
+  "version": "1.0.0",
+  "description": "Joomlaサイトがバックドアやwebシェルに侵害されていないか調査するスキル"
+}
