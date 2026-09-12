@@ -1,0 +1,8 @@
+{
+  "name": "save-shared-skill",
+  "description": "再利用できそうな作業手順・調査手順・ノウハウを、Devin と Claude Code の両方で使える共有スキルとして hirosashi/web_export に保存するときに使う。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hirosashi"
+  }
+}

@@ -9,3 +9,11 @@
 - ドメイン配下の画像をパス構造を維持して保存
 - 投稿・カスタム投稿（single ページ）はフェーズ1では対象外
 - 別ドメインや外部ページは対応外
+
+## 共有スキル（Devin / Claude Code）
+
+`.agents/skills/<name>/SKILL.md` が正本。`scripts/sync-skills.py` が `plugins/` と両マニフェストを生成する（main への push 時に GitHub Actions が自動実行）。
+
+- Devin: 接続リポジトリとして自動インデックスされる。加えて https://app.devin.ai/customize から `hirosashi/web_export` をプラグイン登録すると全セッションで有効
+- Claude Code: `/plugin marketplace add hirosashi/web_export` → `/plugin install <name>@web_export`
+- 新規スキルの追加手順は `save-shared-skill` スキルを参照

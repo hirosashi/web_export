@@ -1,8 +1,17 @@
 {
   "name": "web-export-skills",
   "version": "1.0.0",
-  "description": "hirosashi's shared skills for Devin and Claude Code. Each plugin under plugins/ bundles one skill; the source of truth is .agents/skills/.",
+  "description": "hirosashi's shared skills for Devin and Claude Code. Generated from .agents/skills/ by scripts/sync-skills.py.",
   "requiredPlugins": [
-    { "source": "git-subdir", "url": "https://github.com/hirosashi/web_export.git", "path": "plugins/joomla-backdoor-check" }
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/joomla-backdoor-check"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/save-shared-skill"
+    }
   ]
 }
