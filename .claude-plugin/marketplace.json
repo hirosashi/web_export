@@ -92,9 +92,36 @@
       }
     },
     {
+      "name": "cf7-confirm-toggle-form",
+      "source": "./plugins/cf7-confirm-toggle-form",
+      "description": "Contact Form 7 で「問い合わせ種別による項目の表示切替」と「確認画面風UI（確認→戻る→送信）」を、プラグイン追加なし（テーマの JS/CSS＋autop 無効化）で実装する手順。「種別で入力欄を切り替えたい」「確認画面を付けたい」フォーム要件の時に使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
+      "name": "figma-design-compare",
+      "source": "./plugins/figma-design-compare",
+      "description": "Figma のデザインファイルと、別途渡されたデザイン画像（JPG/PNG）を突き合わせて、セクション順・文言・導線・配色の矛盾を洗い出し実装の基準を決める手順。「Figmaと矛盾が無いか確認」「Figmaと添付を参照して進めて」と言われた時に使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
       "name": "joomla-backdoor-check",
       "source": "./plugins/joomla-backdoor-check",
       "description": "Joomlaサイトがバックドアやwebシェルに侵害されていないか、公式クリーン版との差分比較・書き込み可能フォルダの検索・DB内容の監査で調査するときに使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
+      "name": "jyunbi-wp-default-theme",
+      "source": "./plugins/jyunbi-wp-default-theme",
+      "description": "準備サイト（さくら jyunbi.sakura.ne.jp/wpN）の WordPress `_default` テーマ規約に沿って、固定ページ・投稿CMS（カテゴリ方式）・CF7フォーム・CSSを構築し、SSH+wp-cliで反映・確認する手順。「いつもの準備サイトに構築」「デザイン画像からWordPressを作る」時に使う。",
       "version": "1.0.0",
       "author": {
         "name": "hirosashi"
