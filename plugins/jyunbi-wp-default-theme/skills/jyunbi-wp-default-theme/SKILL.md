@@ -1,0 +1,1 @@
+../../../../.agents/skills/jyunbi-wp-default-theme/SKILL.md

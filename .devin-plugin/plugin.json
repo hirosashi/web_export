@@ -51,7 +51,22 @@
     {
       "source": "git-subdir",
       "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/cf7-confirm-toggle-form"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/figma-design-compare"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
       "path": "plugins/joomla-backdoor-check"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/jyunbi-wp-default-theme"
     },
     {
       "source": "git-subdir",

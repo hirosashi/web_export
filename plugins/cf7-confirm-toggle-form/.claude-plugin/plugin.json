@@ -1,0 +1,8 @@
+{
+  "name": "cf7-confirm-toggle-form",
+  "description": "Contact Form 7 で「問い合わせ種別による項目の表示切替」と「確認画面風UI（確認→戻る→送信）」を、プラグイン追加なし（テーマの JS/CSS＋autop 無効化）で実装する手順。「種別で入力欄を切り替えたい」「確認画面を付けたい」フォーム要件の時に使う。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hirosashi"
+  }
+}

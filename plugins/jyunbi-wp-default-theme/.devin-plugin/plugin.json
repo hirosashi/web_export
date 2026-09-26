@@ -1,0 +1,5 @@
+{
+  "name": "jyunbi-wp-default-theme",
+  "version": "1.0.0",
+  "description": "準備サイト（さくら jyunbi.sakura.ne.jp/wpN）の WordPress `_default` テーマ規約に沿って、固定ページ・投稿CMS（カテゴリ方式）・CF7フォーム・CSSを構築し、SSH+wp-cliで反映・確認する手順。「いつもの準備サイトに構築」「デザイン画像からWordPressを作る」時に使う。"
+}

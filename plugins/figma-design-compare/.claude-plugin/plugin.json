@@ -1,0 +1,8 @@
+{
+  "name": "figma-design-compare",
+  "description": "Figma のデザインファイルと、別途渡されたデザイン画像（JPG/PNG）を突き合わせて、セクション順・文言・導線・配色の矛盾を洗い出し実装の基準を決める手順。「Figmaと矛盾が無いか確認」「Figmaと添付を参照して進めて」と言われた時に使う。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hirosashi"
+  }
+}
