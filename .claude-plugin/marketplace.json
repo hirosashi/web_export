@@ -56,6 +56,15 @@
       }
     },
     {
+      "name": "armheart-deploy-prod-server",
+      "source": "./plugins/armheart-deploy-prod-server",
+      "description": "スイーツ生産管理システム（hirosashi/armheart-sweets）を本番（公開）サーバ（さくら）へ反映し、DB変更を安全に適用して確認する。「本番へ反映」「公開サイトへコピー」と言われたら使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
       "name": "armheart-project-conventions",
       "source": "./plugins/armheart-project-conventions",
       "description": "スイーツ生産管理システム（アルムハート／phase1_dev）の開発規約と環境情報。このプロジェクトでコードを書く・反映する・報告する前に必ず読む。",

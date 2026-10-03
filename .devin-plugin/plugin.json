@@ -31,6 +31,11 @@
     {
       "source": "git-subdir",
       "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/armheart-deploy-prod-server"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
       "path": "plugins/armheart-project-conventions"
     },
     {
