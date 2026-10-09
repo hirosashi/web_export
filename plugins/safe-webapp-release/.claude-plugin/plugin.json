@@ -1,0 +1,8 @@
+{
+  "name": "safe-webapp-release",
+  "description": "Git管理されたWebアプリケーションを開発環境から公開環境へ安全に反映し、ソース・DB・認証・公開後の動作を確認するときに使う。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hirosashi"
+  }
+}

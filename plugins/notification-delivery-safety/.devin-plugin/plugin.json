@@ -1,0 +1,5 @@
+{
+  "name": "notification-delivery-safety",
+  "version": "1.0.0",
+  "description": "メールや外部通知を追加・変更するときに、重複送信・大量送信・誤送信を防ぎながら検証するために使う。"
+}

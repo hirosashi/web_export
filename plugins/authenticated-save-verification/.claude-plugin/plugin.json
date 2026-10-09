@@ -1,0 +1,8 @@
+{
+  "name": "authenticated-save-verification",
+  "description": "Web画面の保存・更新・削除が実際の認証付き環境で成功し、再表示後も永続化されていることを確認するときに使う。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hirosashi"
+  }
+}
