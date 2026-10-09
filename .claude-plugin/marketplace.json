@@ -128,6 +128,15 @@
       }
     },
     {
+      "name": "safe-sftp-deployment",
+      "source": "./plugins/safe-sftp-deployment",
+      "description": "本番環境の設定・運用データを保護しながら、確認済みの差分だけをSFTPで反映するときに使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
       "name": "save-shared-skill",
       "source": "./plugins/save-shared-skill",
       "description": "再利用できそうな作業手順・調査手順・ノウハウを、Devin と Claude Code の両方で使える共有スキルとして hirosashi/web_export に保存するときに使う。",
@@ -137,49 +146,40 @@
       }
     },
     {
-      "name": "safe-sftp-deployment",
-      "description": "本番環境の設定・運用データを保護しながら、確認済みの差分だけをSFTPで反映するときに使う。",
-      "version": "1.0.0",
-      "author": {
-        "name": "hirosashi"
-      },
-      "source": "./plugins/safe-sftp-deployment"
-    },
-    {
       "name": "signage-prep-verification",
+      "source": "./plugins/signage-prep-verification",
       "description": "サイネージサイトの準備環境へ限定的に反映し、画面・API・ブラウザキャッシュを確認するときに使う。",
       "version": "1.0.0",
       "author": {
         "name": "hirosashi"
-      },
-      "source": "./plugins/signage-prep-verification"
+      }
     },
     {
       "name": "signage-report-export",
+      "source": "./plugins/signage-report-export",
       "description": "サイネージ管理画面の予約一覧を固定会場行・時間帯列の帳票としてPDFやExcelへ出力するときに使う。",
       "version": "1.0.0",
       "author": {
         "name": "hirosashi"
-      },
-      "source": "./plugins/signage-report-export"
+      }
     },
     {
       "name": "signage-storage-diagnostics",
+      "source": "./plugins/signage-storage-diagnostics",
       "description": "静的サイトやPHPサイトで管理データが消える・保存されない問題を、ファイル保存・権限・容量・ログから調査するときに使う。",
       "version": "1.0.0",
       "author": {
         "name": "hirosashi"
-      },
-      "source": "./plugins/signage-storage-diagnostics"
+      }
     },
     {
       "name": "tablecheck-data-investigation",
+      "source": "./plugins/tablecheck-data-investigation",
       "description": "TableCheck API・CSV・管理画面の差を比較し、予約重複・ステータス・フラグ・会場情報の取得仕様を調査するときに使う。",
       "version": "1.0.0",
       "author": {
         "name": "hirosashi"
-      },
-      "source": "./plugins/tablecheck-data-investigation"
+      }
     }
   ]
 }

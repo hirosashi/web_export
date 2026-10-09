@@ -71,12 +71,12 @@
     {
       "source": "git-subdir",
       "url": "https://github.com/hirosashi/web_export.git",
-      "path": "plugins/save-shared-skill"
+      "path": "plugins/safe-sftp-deployment"
     },
     {
       "source": "git-subdir",
       "url": "https://github.com/hirosashi/web_export.git",
-      "path": "plugins/safe-sftp-deployment"
+      "path": "plugins/save-shared-skill"
     },
     {
       "source": "git-subdir",
