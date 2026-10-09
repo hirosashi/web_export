@@ -1,0 +1,8 @@
+{
+  "name": "tablecheck-data-investigation",
+  "description": "TableCheck API・CSV・管理画面の差を比較し、予約重複・ステータス・フラグ・会場情報の取得仕様を調査するときに使う。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hirosashi"
+  }
+}

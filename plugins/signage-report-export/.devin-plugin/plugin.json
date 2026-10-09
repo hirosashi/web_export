@@ -1,0 +1,5 @@
+{
+  "name": "signage-report-export",
+  "version": "1.0.0",
+  "description": "サイネージ管理画面の予約一覧を固定会場行・時間帯列の帳票としてPDFやExcelへ出力するときに使う。"
+}

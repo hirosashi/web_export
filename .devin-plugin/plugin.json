@@ -72,6 +72,31 @@
       "source": "git-subdir",
       "url": "https://github.com/hirosashi/web_export.git",
       "path": "plugins/save-shared-skill"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/safe-sftp-deployment"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/signage-prep-verification"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/signage-report-export"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/signage-storage-diagnostics"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/tablecheck-data-investigation"
     }
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "name": "safe-sftp-deployment",
+  "description": "本番環境の設定・運用データを保護しながら、確認済みの差分だけをSFTPで反映するときに使う。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hirosashi"
+  }
+}

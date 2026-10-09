@@ -1,0 +1,5 @@
+{
+  "name": "signage-prep-verification",
+  "version": "1.0.0",
+  "description": "サイネージサイトの準備環境へ限定的に反映し、画面・API・ブラウザキャッシュを確認するときに使う。"
+}

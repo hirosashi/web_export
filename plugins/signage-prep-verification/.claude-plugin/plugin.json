@@ -1,0 +1,8 @@
+{
+  "name": "signage-prep-verification",
+  "description": "サイネージサイトの準備環境へ限定的に反映し、画面・API・ブラウザキャッシュを確認するときに使う。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hirosashi"
+  }
+}

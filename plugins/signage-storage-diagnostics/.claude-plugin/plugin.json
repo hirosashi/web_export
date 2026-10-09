@@ -1,0 +1,8 @@
+{
+  "name": "signage-storage-diagnostics",
+  "description": "静的サイトやPHPサイトで管理データが消える・保存されない問題を、ファイル保存・権限・容量・ログから調査するときに使う。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hirosashi"
+  }
+}
