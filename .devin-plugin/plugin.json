@@ -51,6 +51,11 @@
     {
       "source": "git-subdir",
       "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/authenticated-save-verification"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
       "path": "plugins/cf7-confirm-toggle-form"
     },
     {
@@ -71,7 +76,17 @@
     {
       "source": "git-subdir",
       "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/notification-delivery-safety"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
       "path": "plugins/safe-sftp-deployment"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/safe-webapp-release"
     },
     {
       "source": "git-subdir",

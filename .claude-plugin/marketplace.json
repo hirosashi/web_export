@@ -92,6 +92,15 @@
       }
     },
     {
+      "name": "authenticated-save-verification",
+      "source": "./plugins/authenticated-save-verification",
+      "description": "Web画面の保存・更新・削除が実際の認証付き環境で成功し、再表示後も永続化されていることを確認するときに使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
       "name": "cf7-confirm-toggle-form",
       "source": "./plugins/cf7-confirm-toggle-form",
       "description": "Contact Form 7 で「問い合わせ種別による項目の表示切替」と「確認画面風UI（確認→戻る→送信）」を、プラグイン追加なし（テーマの JS/CSS＋autop 無効化）で実装する手順。「種別で入力欄を切り替えたい」「確認画面を付けたい」フォーム要件の時に使う。",
@@ -128,9 +137,27 @@
       }
     },
     {
+      "name": "notification-delivery-safety",
+      "source": "./plugins/notification-delivery-safety",
+      "description": "メールや外部通知を追加・変更するときに、重複送信・大量送信・誤送信を防ぎながら検証するために使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
       "name": "safe-sftp-deployment",
       "source": "./plugins/safe-sftp-deployment",
       "description": "本番環境の設定・運用データを保護しながら、確認済みの差分だけをSFTPで反映するときに使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
+      "name": "safe-webapp-release",
+      "source": "./plugins/safe-webapp-release",
+      "description": "Git管理されたWebアプリケーションを開発環境から公開環境へ安全に反映し、ソース・DB・認証・公開後の動作を確認するときに使う。",
       "version": "1.0.0",
       "author": {
         "name": "hirosashi"
