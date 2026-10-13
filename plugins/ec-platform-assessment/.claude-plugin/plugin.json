@@ -1,0 +1,8 @@
+{
+  "name": "ec-platform-assessment",
+  "description": "ECサービスの比較・乗り換えを検討し、機能要件、データ移行の制約、個人情報、費用、保守負担を調査・評価するときに使う（移行作業の実施は対象外）。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hirosashi"
+  }
+}

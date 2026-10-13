@@ -1,0 +1,1 @@
+../../../../.agents/skills/ec-platform-assessment/SKILL.md
