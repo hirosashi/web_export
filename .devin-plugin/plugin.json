@@ -86,6 +86,11 @@
     {
       "source": "git-subdir",
       "url": "https://github.com/hirosashi/web_export.git",
+      "path": "plugins/npo-officer-registration"
+    },
+    {
+      "source": "git-subdir",
+      "url": "https://github.com/hirosashi/web_export.git",
       "path": "plugins/safe-sftp-deployment"
     },
     {
