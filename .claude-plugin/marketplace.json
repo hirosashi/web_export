@@ -155,6 +155,15 @@
       }
     },
     {
+      "name": "npo-officer-registration",
+      "source": "./plugins/npo-officer-registration",
+      "description": "NPO法人の役員任期満了に伴う「登記報告申請」（役員変更登記・理事長の重任）の書類一式（総会議事録・互選書・変更登記申請書・定款写し）を作り、法務局へ申請するときに使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
+    },
+    {
       "name": "safe-sftp-deployment",
       "source": "./plugins/safe-sftp-deployment",
       "description": "本番環境の設定・運用データを保護しながら、確認済みの差分だけをSFTPで反映するときに使う。",

@@ -1,0 +1,1 @@
+../../../../.agents/skills/npo-officer-registration/SKILL.md
