@@ -1,0 +1,1 @@
+../../../../.agents/skills/wordpress-xampp-troubleshooting/SKILL.md

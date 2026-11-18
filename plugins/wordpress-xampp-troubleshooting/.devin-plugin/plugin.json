@@ -1,0 +1,5 @@
+{
+  "name": "wordpress-xampp-troubleshooting",
+  "version": "1.0.0",
+  "description": "Restore and troubleshoot an existing WordPress backup on Windows XAMPP. Use for local database imports, broken media after migration, and PHP 8 warnings or deprecations in themes."
+}

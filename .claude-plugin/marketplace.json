@@ -225,6 +225,15 @@
       "author": {
         "name": "hirosashi"
       }
+    },
+    {
+      "name": "wordpress-xampp-troubleshooting",
+      "source": "./plugins/wordpress-xampp-troubleshooting",
+      "description": "Restore and troubleshoot an existing WordPress backup on Windows XAMPP. Use for local database imports, broken media after migration, and PHP 8 warnings or deprecations in themes.",
+      "version": "1.0.0",
+      "author": {
+        "name": "hirosashi"
+      }
     }
   ]
 }
