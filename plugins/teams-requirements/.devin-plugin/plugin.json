@@ -1,0 +1,5 @@
+{
+  "name": "teams-requirements",
+  "version": "1.0.0",
+  "description": "Microsoft Teamsの投稿・返信・添付資料を確認し、改修要望や決定事項を根拠付きの要件一覧にまとめるときに使う。"
+}
